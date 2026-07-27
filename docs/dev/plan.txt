@@ -1,0 +1,23 @@
+So, the theme for this game jam is Sweet Dreams.
+But, I also have to make it weird...
+
+Okay.
+
+Jam Theme: Sweet Dreams
+Game Theme: Dreams are nice, but they aren't real.
+
+Goal: Escape the dream.
+
+THE PLAN:
+	- I want the game to have a chaotic story. And I want it to be good too. So, I will storyboard.
+	- The game should feel lucid. All the mechanics should feel bizarre, otherwordly, or undone.
+		- M: Dialogue system with weird sounds A: Weirdness
+		- M: Wall clipping D: Caught off-guard A: Secrets
+	- The game should feel fun.
+		- Chase the nightmares. They will wake you up.
+		- There are 7 collectible cats. Collect all of them (AND THE HIDDEN KEY) for a secret ending.
+	- The characters should feel real.
+		- Extra lucidity.
+	- This game will be a 3D platformer with inspiration from the Mario 64 ARGs, ENA, DDLC
+
+(More will probably be added here)

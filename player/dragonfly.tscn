@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bimxa38ftkuuo"]
+
+[ext_resource type="PackedScene" uid="uid://dvu7wg06jcjkb" path="res://player/dragonfly.fbx" id="1_cydmv"]
+
+[node name="dragonfly" unique_id=710967787 instance=ExtResource("1_cydmv")]

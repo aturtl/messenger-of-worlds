@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cecpxy1vaxsrc"]
+
+[ext_resource type="PackedScene" uid="uid://dvu7wg06jcjkb" path="res://player/dragonfly.fbx" id="1_nnsk1"]
+
+[node name="World" type="Node3D" unique_id=80252885]
+
+[node name="dragonfly" parent="." unique_id=710967787 instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6860113, 0, 0.4693278)

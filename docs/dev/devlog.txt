@@ -4,3 +4,14 @@ My devlog last time (GWJ #94) felt a little bit bland. I was just stating object
 So I've decided I will not just list what I create, but my thoughts behind them as well.
 
 7/26:
+	- Created a basic plan (plan.txt). I think the idea's pretty bizarre.
+	- Sketched out a basic dragonfly character.
+		- I chose a dragonfly because of their spiritual symbolism (https://www.icysedgwick.com/dragonfly-folklore/)
+		- Most notably inspired by the line: "In various spiritual pathways, the dragonfly acts as a messenger between the worlds.
+		   They teach those who see them to ‘go with the flow’. But seeing one in your dreams is a warning." - Sedgwick
+	- 3d-modeled and rigged dragonfly character
+		- Took a bit longer than I wanted to since I hadn't used Blender for more than a year.
+		- Attempted to use single planes for the wings but turns out Godot does not like those. (Frustration)
+		   Tried to disable culling with shaders, but could not access original texture intuitively.
+		   So, I ended up just extruding wings slightly.
+	- Though I only had a couple hours to work with today, I intend to do a lot more tomorrow!
