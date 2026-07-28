@@ -9,12 +9,9 @@ signal entered_range
 signal exited_range
 signal interacted
 
-
 var in_range = false
 
-
 var disabled = false
-
 
 func _dialogue_started():
 	print("tracked")
@@ -42,4 +39,5 @@ func _physics_process(delta):
 		in_range = false
 	
 	if !disabled and in_range and Input.is_action_just_pressed("interact"):
-		interacted.emit()
+		if !player.player_lock:
+			interacted.emit()

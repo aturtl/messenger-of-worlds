@@ -1,7 +1,9 @@
 extends CharacterBody3D
 
-@onready var cam: Camera3D = $Camera3D
+@onready var cam: Camera3D = $PlayerCamera
 @onready var model: Node3D = $Model
+
+var player_lock = true
 
 var cam_y_rot: float = 0.0
 var input_direction: Vector2
@@ -23,6 +25,9 @@ var move_velocity: Vector3
 var grav_velocity: Vector3
 
 func _physics_process(delta):
+	if player_lock:
+		return
+	
 	cam_y_rot = cam.rotation.y
 	
 	jumping = Input.is_action_pressed("jump")

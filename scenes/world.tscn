@@ -1,13 +1,148 @@
 [gd_scene format=3 uid="uid://cecpxy1vaxsrc"]
 
+[ext_resource type="Script" uid="uid://d3qofiddco35e" path="res://scenes/set_global_variables.gd" id="1_ggc52"]
 [ext_resource type="PackedScene" uid="uid://bimxa38ftkuuo" path="res://player/dragonfly.tscn" id="1_nnsk1"]
 [ext_resource type="Script" uid="uid://bsi5cjse6ftob" path="res://scenes/player.gd" id="1_rwgxs"]
+[ext_resource type="Texture2D" uid="uid://c08xkipwwb7uu" path="res://cutscenes/opening_cutscene/sheep_intro_0000.png" id="2_rup4s"]
+[ext_resource type="Texture2D" uid="uid://xwuplo15ab8r" path="res://cutscenes/opening_cutscene/sheep_intro_0001.png" id="3_4kbfs"]
 [ext_resource type="Script" uid="uid://cunooskta1d6u" path="res://scenes/camera.gd" id="3_4wyf3"]
+[ext_resource type="Texture2D" uid="uid://bgu1153x7n1sc" path="res://cutscenes/opening_cutscene/sheep_intro_0002.png" id="4_f17e3"]
 [ext_resource type="PackedScene" uid="uid://xp4i0a1jk1pp" path="res://sun.tscn" id="4_k0juu"]
-[ext_resource type="Script" uid="uid://dmxa535a4jr4i" path="res://class_dialogue_box.gd" id="5_71j4m"]
+[ext_resource type="Texture2D" uid="uid://bc128yphsgtwb" path="res://npcs/sun/anim_eye_1.png" id="5_71j4m"]
+[ext_resource type="Texture2D" uid="uid://ij20gsye45et" path="res://cutscenes/opening_cutscene/sheep_intro_0003.png" id="5_x2olw"]
+[ext_resource type="Texture2D" uid="uid://ck7p8gihnn0pd" path="res://cutscenes/opening_cutscene/sheep_intro_0004.png" id="6_817gm"]
 [ext_resource type="Script" uid="uid://c8bi7g2viyk8e" path="res://dialogue/class_dialogue_statement.gd" id="6_i7141"]
 [ext_resource type="Script" uid="uid://bhe338gcwph67" path="res://class_dialogue_interactable.gd" id="7_4mrxx"]
+[ext_resource type="Texture2D" uid="uid://dagotbimfdg1r" path="res://cutscenes/opening_cutscene/sheep_intro_0005.png" id="7_ggc52"]
 [ext_resource type="AudioStream" uid="uid://drl5en7i16siv" path="res://sounds/talk/bite_of_87_2.mp3" id="8_4mrxx"]
+[ext_resource type="Script" uid="uid://dmxa535a4jr4i" path="res://class_dialogue_box.gd" id="8_e3hyu"]
+[ext_resource type="Texture2D" uid="uid://7c1ajm7tbq8s" path="res://cutscenes/opening_cutscene/sheep_intro_0006.png" id="8_l8ah6"]
+[ext_resource type="Texture2D" uid="uid://bhl875r037f4e" path="res://cutscenes/opening_cutscene/sheep_intro_0007.png" id="9_e75v4"]
+[ext_resource type="Texture2D" uid="uid://mffm5ugqv86i" path="res://cutscenes/opening_cutscene/sheep_intro_0008.png" id="10_8u370"]
+[ext_resource type="Texture2D" uid="uid://dtvykvkrhg86y" path="res://cutscenes/opening_cutscene/sheep_intro_0009.png" id="11_rga7q"]
+[ext_resource type="Texture2D" uid="uid://de2ifp01wglrv" path="res://cutscenes/opening_cutscene/sheep_intro_0010.png" id="12_6oujy"]
+[ext_resource type="Texture2D" uid="uid://b6i83npc1ukm6" path="res://cutscenes/opening_cutscene/sheep_intro_0011.png" id="13_hi6a0"]
+[ext_resource type="Texture2D" uid="uid://dwumq66pt186r" path="res://cutscenes/opening_cutscene/sheep_intro_0012.png" id="14_eo1xk"]
+[ext_resource type="Texture2D" uid="uid://dnanxmy08gjt0" path="res://cutscenes/opening_cutscene/sheep_intro_0013.png" id="15_18clu"]
+[ext_resource type="Texture2D" uid="uid://cfa580ownsyxx" path="res://cutscenes/opening_cutscene/sheep_intro_0014.png" id="16_4wdv8"]
+[ext_resource type="Texture2D" uid="uid://c3c01dt45dyjg" path="res://cutscenes/opening_cutscene/sheep_intro_0015.png" id="17_d46x8"]
+[ext_resource type="Texture2D" uid="uid://dvo7sxtyb152w" path="res://cutscenes/opening_cutscene/sheep_intro_0016.png" id="18_3l05q"]
+[ext_resource type="Texture2D" uid="uid://dujyumxlf14ja" path="res://cutscenes/opening_cutscene/sheep_intro_0017.png" id="19_x28ej"]
+[ext_resource type="Texture2D" uid="uid://djw3dj8rqgakp" path="res://cutscenes/opening_cutscene/sheep_intro_0018.png" id="20_1jxku"]
+[ext_resource type="Texture2D" uid="uid://cfpusex1fto3g" path="res://cutscenes/opening_cutscene/sheep_intro_0019.png" id="21_1dgkn"]
+[ext_resource type="Texture2D" uid="uid://dxqwrt06a4kga" path="res://cutscenes/opening_cutscene/sheep_intro_0020.png" id="22_e68xj"]
+[ext_resource type="Texture2D" uid="uid://sjdlwdvxipk0" path="res://cutscenes/opening_cutscene/sheep_intro_0021.png" id="23_5hglh"]
+[ext_resource type="Texture2D" uid="uid://w6y5ql0jmy0x" path="res://cutscenes/opening_cutscene/sheep_intro_0022.png" id="24_qg546"]
+[ext_resource type="Texture2D" uid="uid://cjee1l4r225y2" path="res://cutscenes/opening_cutscene/sheep_intro_0023.png" id="25_pf35h"]
+[ext_resource type="Script" uid="uid://bvmo1jjyd18rp" path="res://scenes/sheep_intro.gd" id="26_4kbfs"]
+[ext_resource type="Script" uid="uid://cwtp35nvh4t0q" path="res://scenes/class_cutscene_camera.gd" id="27_f17e3"]
+[ext_resource type="Script" uid="uid://bur5dk4014bgh" path="res://scenes/action_camera.gd" id="28_x2olw"]
+[ext_resource type="Script" uid="uid://cvb7o2yhfmj0k" path="res://sun.gd" id="29_l8ah6"]
+[ext_resource type="Script" uid="uid://bs8lrqvfvygki" path="res://scenes/forgot_to_mention.gd" id="30_e75v4"]
+[ext_resource type="AudioStream" uid="uid://1exueptoyvva" path="res://sounds/talk/gambling.mp3" id="37_817gm"]
+[ext_resource type="AudioStream" uid="uid://dgnk3ageoeytm" path="res://sounds/talk/bite_of_87.mp3" id="41_8u370"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q5onr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_qg546")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_pf35h")
+}],
+"loop": true,
+"name": &"end",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rup4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4kbfs")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rup4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4kbfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f17e3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_x2olw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_817gm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ggc52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_l8ah6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_e75v4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8u370")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rga7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6oujy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hi6a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_eo1xk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_18clu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4wdv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_d46x8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_3l05q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_x28ej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1jxku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1dgkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_e68xj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_5hglh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_qg546")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_pf35h")
+}],
+"loop": true,
+"name": &"start",
+"speed": 5.0
+}]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rwgxs"]
 sky_top_color = Color(0.93510705, 0.55635434, 0.82134336, 1)
@@ -30,6 +165,94 @@ height = 3.677246
 
 [node name="World" type="Node3D" unique_id=80252885]
 
+[node name="SetGlobalVariables" type="Node3D" parent="." unique_id=1655427503]
+script = ExtResource("1_ggc52")
+
+[node name="BlackScreen" type="ColorRect" parent="." unique_id=1988264618]
+visible = false
+z_index = 20
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.839998, 16.32)
+color = Color(0, 0, 0, 0)
+
+[node name="SheepIntro" type="Node2D" parent="." unique_id=89811382]
+
+[node name="SheepIntroAnim" type="AnimatedSprite2D" parent="SheepIntro" unique_id=1299469526 node_paths=PackedStringArray("button", "black_screen")]
+position = Vector2(619, 247)
+sprite_frames = SubResource("SpriteFrames_q5onr")
+animation = &"idle"
+frame_progress = 0.62815255
+script = ExtResource("26_4kbfs")
+button = NodePath("../StartGame")
+black_screen = NodePath("../../BlackScreen")
+
+[node name="StartGame" type="TextureButton" parent="SheepIntro" unique_id=1759389828]
+z_index = 10
+offset_left = 245.0
+offset_top = 206.0
+offset_right = 901.0
+offset_bottom = 826.0
+texture_normal = ExtResource("5_71j4m")
+
+[node name="Sun" type="Node3D" parent="." unique_id=572627947]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.531, 20.392, -56.256)
+
+[node name="MovableSun" parent="Sun" unique_id=1416491935 instance=ExtResource("4_k0juu")]
+script = ExtResource("29_l8ah6")
+
+[node name="ForgotToMention" type="Node3D" parent="." unique_id=221083813]
+script = ExtResource("30_e75v4")
+
+[node name="CutsceneCameras" type="Node3D" parent="." unique_id=47478518]
+unique_name_in_owner = true
+
+[node name="Opening" type="Node3D" parent="CutsceneCameras" unique_id=32334953]
+
+[node name="Sun1" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=482408026]
+transform = Transform3D(0.9997618, 0.0021866504, -0.021715395, 0, 0.9949684, 0.1001892, 0.021825211, -0.10016534, 0.9947314, 2.8740742, 19.202047, -38.25427)
+script = ExtResource("27_f17e3")
+
+[node name="Sun2" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=873449429]
+transform = Transform3D(0.8616364, -0.035404105, 0.50628966, 0, 0.99756396, 0.06975821, -0.50752604, -0.06010621, 0.8595374, 13.330166, 20.884527, -31.765003)
+script = ExtResource("27_f17e3")
+weight = 0.1
+
+[node name="Sun2_1" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=593617560]
+transform = Transform3D(0.9999145, 0.0105035985, 0.0077851876, 0, 0.59546185, -0.8033836, -0.013074201, 0.8033149, 0.59541094, 2.0120885, 2.7675858, -38.727386)
+script = ExtResource("27_f17e3")
+weight = 0.01
+
+[node name="Player3" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=44863540]
+transform = Transform3D(0.11757026, 0.0035429755, 0.99305826, 0, 0.9999936, -0.0035677194, -0.9930646, 0.00041945765, 0.117569506, 33.62857, 9.945182, -21.812237)
+script = ExtResource("27_f17e3")
+
+[node name="Player4" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=281361864]
+transform = Transform3D(0.9703015, 0.03888287, 0.23875323, 0, 0.98699677, -0.16074032, -0.24189869, 0.15596657, 0.95768446, 8.545085, 3.332386, 11.249519)
+script = ExtResource("27_f17e3")
+weight = 0.1
+
+[node name="Sun5" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=1986238489]
+transform = Transform3D(0.81662464, 0.06738254, -0.5732223, 0, 0.99316174, 0.11674661, 0.5771691, -0.09533816, 0.81104034, -6.971899, 20.50146, -39.779938)
+script = ExtResource("27_f17e3")
+weight = 0.1
+
+[node name="DONT6" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=1799845002]
+transform = Transform3D(-0.8457154, -0.07699262, 0.5280507, 0, 0.98953694, 0.14427978, -0.5336342, 0.12201963, -0.8368666, -9.264444, 16.12154, 6.0469894)
+script = ExtResource("27_f17e3")
+weight = 0.1
+
+[node name="Player7" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=1360004843]
+transform = Transform3D(-0.93358904, 0.113975056, -0.339737, 0, 0.94807094, 0.31805906, 0.35834557, 0.29693645, -0.8851086, -2.960761, 4.7611427, -6.276886)
+script = ExtResource("27_f17e3")
+weight = 0.1
+
+[node name="ActionCamera" type="Camera3D" parent="CutsceneCameras" unique_id=1373667620 node_paths=PackedStringArray("cutscene_camera")]
+unique_name_in_owner = true
+current = true
+script = ExtResource("28_x2olw")
+cutscene_camera = NodePath("../Opening/Sun1")
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=596975614]
 environment = SubResource("Environment_k0juu")
 
@@ -44,9 +267,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.642435, 0)
 script = ExtResource("1_rwgxs")
 
 [node name="Model" parent="Player" unique_id=710967787 instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.0676565, 0)
+transform = Transform3D(-0.99985844, 0, 0.01682408, 0, 1, 0, -0.01682408, 0, -0.99985844, 0, -4.0676565, 0)
 
-[node name="Camera3D" type="Camera3D" parent="Player" unique_id=982572692]
+[node name="PlayerCamera" type="Camera3D" parent="Player" unique_id=982572692]
+unique_name_in_owner = true
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.7239339, 3.743249, -7.132221)
 top_level = true
 current = true
@@ -60,30 +284,23 @@ shape = SubResource("CapsuleShape3D_rwgxs")
 use_collision = true
 size = Vector3(64, 1, 64)
 
-[node name="sun2" parent="." unique_id=1416491935 instance=ExtResource("4_k0juu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5305347, 20.392015, -56.256348)
-
-[node name="SunTalk" type="Node3D" parent="." unique_id=1904488369 node_paths=PackedStringArray("line")]
+[node name="InteractSunTalk" type="Node3D" parent="." unique_id=1904488369 node_paths=PackedStringArray("line")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.322878)
 script = ExtResource("7_4mrxx")
-line = NodePath("../DialogueLines/StatementSun")
+line = NodePath("../DialogueLines/StatementSunChill")
+interact_range = 10.0
 metadata/_custom_type_script = "uid://bhe338gcwph67"
 
-[node name="DialogueBoxes" type="Control" parent="." unique_id=1462893512]
+[node name="DialogueBoxes" type="Node2D" parent="." unique_id=330290033]
 unique_name_in_owner = true
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="Regular" type="Control" parent="DialogueBoxes" unique_id=1066572215 node_paths=PackedStringArray("label")]
 visible = false
+layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("5_71j4m")
+script = ExtResource("8_e3hyu")
 label = NodePath("Text")
 
 [node name="Background" type="Control" parent="DialogueBoxes/Regular" unique_id=1921429509]
@@ -118,25 +335,109 @@ bbcode_enabled = true
 text = "hello "
 
 [node name="DialogueLines" type="Node" parent="." unique_id=183059408]
+unique_name_in_owner = true
 
-[node name="StatementSun" type="Node" parent="DialogueLines" unique_id=783386562]
+[node name="StatementSun" type="Node" parent="DialogueLines" unique_id=783386562 node_paths=PackedStringArray("cutscene_camera")]
 script = ExtResource("6_i7141")
 text = "[wave amp=20.0 freq=5.0 connected=0]hello i am the sun"
 talk_sound = ExtResource("8_4mrxx")
+cutscene_camera = NodePath("../../CutsceneCameras/Opening/Sun1")
+string_signal = "suntalk"
 metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
 
-[node name="StatementSun2" type="Node" parent="DialogueLines/StatementSun" unique_id=1155873209]
+[node name="StatementSun2" type="Node" parent="DialogueLines/StatementSun" unique_id=1155873209 node_paths=PackedStringArray("cutscene_camera")]
 script = ExtResource("6_i7141")
 text = "i have been watching [wave amp=20.0 freq=5.0 connected=0]you[/wave]"
 talk_sound = ExtResource("8_4mrxx")
+cutscene_camera = NodePath("../../../CutsceneCameras/Opening/Sun2")
+string_signal = "suntalk"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSun3" type="Node" parent="DialogueLines/StatementSun/StatementSun2" unique_id=1395771086 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "What is this place, my man?"
+talk_sound = ExtResource("37_817gm")
+cutscene_camera = NodePath("../../../../CutsceneCameras/Opening/Player3")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSun4" type="Node" parent="DialogueLines/StatementSun/StatementSun2/StatementSun3" unique_id=1650372963 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "[wave amp=50.0 freq=14.0 connected=1][rainbow]this is purgatory[/rainbow][/wave]"
+talk_sound = ExtResource("8_4mrxx")
+cutscene_camera = NodePath("../../../../../CutsceneCameras/Opening/Sun2")
+string_signal = "suntalk"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSun5" type="Node" parent="DialogueLines/StatementSun/StatementSun2/StatementSun3/StatementSun4" unique_id=1646406250 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "[wave amp=80.0 freq=14.0 connected=1]hah just kidding. this is your dream. do whatever you want :p[/wave]"
+talk_sound = ExtResource("8_4mrxx")
+cutscene_camera = NodePath("../../../../../../CutsceneCameras/Opening/Sun2_1")
+string_signal = "suntalk"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSun6" type="Node" parent="DialogueLines/StatementSun/StatementSun2/StatementSun3/StatementSun4/StatementSun5" unique_id=269388422 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "aight sick bro"
+talk_sound = ExtResource("37_817gm")
+cutscene_camera = NodePath("../../../../../../../CutsceneCameras/Opening/Player4")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSun7" type="Node" parent="DialogueLines/StatementSun/StatementSun2/StatementSun3/StatementSun4/StatementSun5/StatementSun6" unique_id=1997990185 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "[rainbow]      WAIT[/rainbow]"
+talk_sound = ExtResource("8_4mrxx")
+cutscene_camera = NodePath("../../../../../../../../CutsceneCameras/Opening/Sun5")
+string_signal = "suntalk"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSun8" type="Node" parent="DialogueLines/StatementSun/StatementSun2/StatementSun3/StatementSun4/StatementSun5/StatementSun6/StatementSun7" unique_id=235119330 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "[rainbow]WHATEVER YOU DO[/rainbow]"
+talk_sound = ExtResource("8_4mrxx")
+cutscene_camera = NodePath("../../../../../../../../../CutsceneCameras/Opening/Sun1")
+string_signal = "suntalk"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSun9" type="Node" parent="DialogueLines/StatementSun/StatementSun2/StatementSun3/StatementSun4/StatementSun5/StatementSun6/StatementSun7/StatementSun8" unique_id=720046700 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "[rainbow]DONT GO THERE[/rainbow]"
+talk_sound = ExtResource("8_4mrxx")
+cutscene_camera = NodePath("../../../../../../../../../../CutsceneCameras/Opening/DONT6")
+string_signal = "suntalk"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSun10" type="Node" parent="DialogueLines/StatementSun/StatementSun2/StatementSun3/StatementSun4/StatementSun5/StatementSun6/StatementSun7/StatementSun8/StatementSun9" unique_id=858182366 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "ok bro"
+talk_sound = ExtResource("37_817gm")
+cutscene_camera = NodePath("../../../../../../../../../../../CutsceneCameras/Opening/Player7")
+string_signal = "introforgot"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSunForgot" type="Node" parent="DialogueLines" unique_id=158151077 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "[wave amp=20.0 freq=5.0 connected=0]i forgot to mention"
+talk_sound = ExtResource("8_4mrxx")
+cutscene_camera = NodePath("../../CutsceneCameras/Opening/Sun1")
+string_signal = "suntalk"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSunForgot2" type="Node" parent="DialogueLines/StatementSunForgot" unique_id=1447230459 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "[wave amp=20.0 freq=5.0 connected=0]press W, A, S, D to move or arrow keys whatever you want. and dont forget to jump. its good for you. seriously. ive heard if you jump 100 times something cool will happen."
+talk_sound = ExtResource("8_4mrxx")
+cutscene_camera = NodePath("../../../CutsceneCameras/Opening/Sun1")
+string_signal = "suntalk"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSunChill" type="Node" parent="DialogueLines" unique_id=302666504]
+script = ExtResource("6_i7141")
+text = "what's up"
+talk_sound = ExtResource("41_8u370")
 metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
 
 [node name="Sound" type="Node3D" parent="." unique_id=1795944622]
 unique_name_in_owner = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sound" unique_id=1686629649]
-
-[node name="ActionCameras" type="Node3D" parent="." unique_id=47478518]
-
-[node name="Camera3D" type="Camera3D" parent="ActionCameras" unique_id=1320895170]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.698284, -30.753359)

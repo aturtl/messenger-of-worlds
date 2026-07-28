@@ -2,22 +2,24 @@
 
 [ext_resource type="PackedScene" uid="uid://dk184mj0ftpxv" path="res://sun.fbx" id="1_iveel"]
 [ext_resource type="Texture2D" uid="uid://bc128yphsgtwb" path="res://npcs/sun/anim_eye_1.png" id="2_gtd5v"]
+[ext_resource type="Texture2D" uid="uid://cke4c5uk13fsh" path="res://npcs/sun/mouth_0000.png" id="3_enfo0"]
+[ext_resource type="Script" uid="uid://cx2e2yq0k3ls5" path="res://animate_mouth.gd" id="4_gxffh"]
+[ext_resource type="Texture2D" uid="uid://c5rf1wcqjktxu" path="res://npcs/sun/mouth_0001.png" id="5_2nmf8"]
+[ext_resource type="Texture2D" uid="uid://c0aqh04qrrb4v" path="res://npcs/sun/mouth_0002.png" id="6_e3tf3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_enfo0"]
 shading_mode = 0
-albedo_color = Color(0.9185665, 0.28836942, 0.23204476, 1)
+albedo_color = Color(1, 0.3137255, 0.38431373, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtd5v"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3tf3"]
 shading_mode = 0
-disable_ambient_light = true
-albedo_color = Color(1, 1, 0, 1)
-disable_receive_shadows = true
+albedo_color = Color(0.6431373, 0.03137255, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gxffh"]
 transparency = 1
 shading_mode = 0
 albedo_texture = ExtResource("2_gtd5v")
-billboard_mode = 1
+texture_filter = 0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_dhcfm"]
 material = SubResource("StandardMaterial3D_gxffh")
@@ -29,25 +31,58 @@ transparency = 1
 shading_mode = 0
 albedo_texture = ExtResource("2_gtd5v")
 uv1_scale = Vector3(-1, 1, 1)
-billboard_mode = 1
+texture_filter = 0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_e3tf3"]
 material = SubResource("StandardMaterial3D_2nmf8")
 size = Vector2(12, 12)
 orientation = 2
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xtwxc"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("3_enfo0")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3sd0k"]
+material = SubResource("StandardMaterial3D_xtwxc")
+size = Vector2(12, 12)
+orientation = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtd5v"]
+shading_mode = 0
+disable_ambient_light = true
+albedo_color = Color(1, 1, 0.03529412, 1)
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dhcfm"]
+shading_mode = 0
+albedo_color = Color(0.87177366, 0.5113308, 0.19984648, 1)
+
 [node name="sun" unique_id=1416491935 instance=ExtResource("1_iveel")]
 
-[node name="Cube" parent="." index="0" unique_id=614583035]
+[node name="Cube" parent="." index="0" unique_id=683073360]
 surface_material_override/0 = SubResource("StandardMaterial3D_enfo0")
 
-[node name="Icosphere" parent="." index="1" unique_id=800493927]
-surface_material_override/0 = SubResource("StandardMaterial3D_gtd5v")
+[node name="Cube_001" parent="." index="1" unique_id=1811154049]
+surface_material_override/0 = SubResource("StandardMaterial3D_e3tf3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." index="2" unique_id=1401094799]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0183973, 0, 13.3543625)
+transform = Transform3D(0.9057612, 0, 0.42378846, 0, 1, 0, -0.42378846, 0, 0.9057612, 6.0183973, 0, 9.877054)
 mesh = SubResource("PlaneMesh_dhcfm")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="." index="3" unique_id=602152027]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.967024, 0, 13.3543625)
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." index="3" unique_id=83148489]
+transform = Transform3D(0.9055688, 0, -0.4241994, 0, 1, 0, 0.4241994, 0, 0.9055688, -6.018, 0, 9.877)
 mesh = SubResource("PlaneMesh_e3tf3")
+
+[node name="Mouth" type="MeshInstance3D" parent="." index="4" unique_id=584733307]
+transform = Transform3D(1, 0, 0, 0, 0.9415764, -0.33679947, 0, 0.33679947, 0.9415764, 0, -3.494, 10.569)
+mesh = SubResource("PlaneMesh_3sd0k")
+script = ExtResource("4_gxffh")
+frames = [ExtResource("3_enfo0"), ExtResource("5_2nmf8"), ExtResource("6_e3tf3")]
+
+[node name="Icosphere" parent="." index="5" unique_id=336861041]
+surface_material_override/0 = SubResource("StandardMaterial3D_gtd5v")
+
+[node name="Icosphere_001" parent="." index="6" unique_id=1138446694]
+surface_material_override/0 = SubResource("StandardMaterial3D_dhcfm")

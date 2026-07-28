@@ -5,7 +5,8 @@ signal statement_continue
 signal choice_made
 signal started
 signal ended
-
+signal string_signal
+signal finished_talking
 
 var choice: int
 
@@ -37,9 +38,18 @@ func play_line(dialogue: DialogueLine):
 	
 	dialogue.box.visible = true
 	
+	var cc = dialogue.cutscene_camera
+	if cc:
+		GlobalVariables.action_camera.current = true
+		cc.interpolate_to()
+	
+	if dialogue.string_signal != "":
+		string_signal.emit(dialogue.string_signal)
+	
 	talking = true
 	await talk(dialogue)
 	talking = false
+	finished_talking.emit()
 	
 	await statement_continue
 	
@@ -54,12 +64,15 @@ func play_line(dialogue: DialogueLine):
 
 
 func start(dialogue: DialogueLine):
+	GlobalVariables.player.player_lock = true
 	started.emit()
 	running = true
 	play_line(dialogue)
 
 
 func finish():
+	GlobalVariables.player_camera.current = true
+	GlobalVariables.player.player_lock = false
 	running = false
 	ended.emit()
 	print("done")
@@ -85,12 +98,11 @@ func talk(dialogue: DialogueLine):
 	for _n in len:
 		await get_tree().create_timer(.05).timeout
 		label.visible_characters += 1
-		sound.pitch_scale = randf_range(.9,1.1)
-		sound.play()
+		if !label.text[label.visible_characters-1] == " ":
+			sound.pitch_scale = randf_range(.9,1.1)
+			sound.play()
 		if !talking:
 			break
-	
-	sound.stop()
 	
 	label.visible_characters = -1
 
