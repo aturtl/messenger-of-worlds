@@ -3,6 +3,8 @@ New Wierd Game Jam Dev Log
 My devlog last time (GWJ #94) felt a little bit bland. I was just stating objectives, but I realize a devlog can be much more personal and creative than just that.
 So I've decided I will not just list what I create, but my thoughts behind them as well.
 
+I will also be focusing on quality over quantity this time (unlike GWJ#94). My goal is to learn, even if there's not enough time to completely make my game a "game".
+
 7/26:
 	- Created a basic plan (plan.txt). I think the idea's pretty bizarre.
 	- Sketched out a basic dragonfly character.
@@ -15,3 +17,14 @@ So I've decided I will not just list what I create, but my thoughts behind them 
 		   Tried to disable culling with shaders, but could not access original texture intuitively.
 		   So, I ended up just extruding wings slightly.
 	- Though I only had a couple hours to work with today, I intend to do a lot more tomorrow!
+
+7/27:
+	- Storyboarded sun scene
+	- Created basic movement for the character.
+	- Made the camera follow the player like in Mario 64.
+	- Modeled the sun (literally just a sphere with a ring of boxes lol)
+	- Created eyes for the sun using Clip Studio Paint. I plan on animating them, but I'm happy with how they look so far.
+	- Dialogue system. Hip hip hooray!!! Now I can make my characters have goofy personalities!
+	- Added skippable dialogue for impatient people!
+	- Added a text blip for the sun sampled from Markiplier's IS THAT THE BITE OF 87
+	- Created a sheep animation for the intro. I wanted to try animating using CSP (I usually use aseprite)

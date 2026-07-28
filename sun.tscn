@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://xp4i0a1jk1pp"]
+
+[ext_resource type="PackedScene" uid="uid://dk184mj0ftpxv" path="res://sun.fbx" id="1_iveel"]
+[ext_resource type="Texture2D" uid="uid://bc128yphsgtwb" path="res://npcs/sun/anim_eye_1.png" id="2_gtd5v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_enfo0"]
+shading_mode = 0
+albedo_color = Color(0.9185665, 0.28836942, 0.23204476, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtd5v"]
+shading_mode = 0
+disable_ambient_light = true
+albedo_color = Color(1, 1, 0, 1)
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gxffh"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("2_gtd5v")
+billboard_mode = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dhcfm"]
+material = SubResource("StandardMaterial3D_gxffh")
+size = Vector2(12, 12)
+orientation = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2nmf8"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("2_gtd5v")
+uv1_scale = Vector3(-1, 1, 1)
+billboard_mode = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e3tf3"]
+material = SubResource("StandardMaterial3D_2nmf8")
+size = Vector2(12, 12)
+orientation = 2
+
+[node name="sun" unique_id=1416491935 instance=ExtResource("1_iveel")]
+
+[node name="Cube" parent="." index="0" unique_id=614583035]
+surface_material_override/0 = SubResource("StandardMaterial3D_enfo0")
+
+[node name="Icosphere" parent="." index="1" unique_id=800493927]
+surface_material_override/0 = SubResource("StandardMaterial3D_gtd5v")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="2" unique_id=1401094799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0183973, 0, 13.3543625)
+mesh = SubResource("PlaneMesh_dhcfm")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." index="3" unique_id=602152027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.967024, 0, 13.3543625)
+mesh = SubResource("PlaneMesh_e3tf3")

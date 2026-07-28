@@ -2,4 +2,20 @@
 
 [ext_resource type="PackedScene" uid="uid://dvu7wg06jcjkb" path="res://player/dragonfly.fbx" id="1_cydmv"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cvamv"]
+shading_mode = 0
+albedo_color = Color(0.9999986, 0.20226735, 0.40220585, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nwck4"]
+shading_mode = 0
+albedo_color = Color(0.43154368, 0.012641975, 0.18283668, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wyg2l"]
+shading_mode = 0
+
 [node name="dragonfly" unique_id=710967787 instance=ExtResource("1_cydmv")]
+
+[node name="Icosphere_002" parent="Armature_R/Skeleton3D" parent_id_path=PackedInt32Array(149606314) index="0" unique_id=1832273678]
+surface_material_override/0 = SubResource("StandardMaterial3D_cvamv")
+surface_material_override/1 = SubResource("StandardMaterial3D_nwck4")
+surface_material_override/2 = SubResource("StandardMaterial3D_wyg2l")

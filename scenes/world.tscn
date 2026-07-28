@@ -1,8 +1,142 @@
 [gd_scene format=3 uid="uid://cecpxy1vaxsrc"]
 
-[ext_resource type="PackedScene" uid="uid://dvu7wg06jcjkb" path="res://player/dragonfly.fbx" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://bimxa38ftkuuo" path="res://player/dragonfly.tscn" id="1_nnsk1"]
+[ext_resource type="Script" uid="uid://bsi5cjse6ftob" path="res://scenes/player.gd" id="1_rwgxs"]
+[ext_resource type="Script" uid="uid://cunooskta1d6u" path="res://scenes/camera.gd" id="3_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://xp4i0a1jk1pp" path="res://sun.tscn" id="4_k0juu"]
+[ext_resource type="Script" uid="uid://dmxa535a4jr4i" path="res://class_dialogue_box.gd" id="5_71j4m"]
+[ext_resource type="Script" uid="uid://c8bi7g2viyk8e" path="res://dialogue/class_dialogue_statement.gd" id="6_i7141"]
+[ext_resource type="Script" uid="uid://bhe338gcwph67" path="res://class_dialogue_interactable.gd" id="7_4mrxx"]
+[ext_resource type="AudioStream" uid="uid://drl5en7i16siv" path="res://sounds/talk/bite_of_87_2.mp3" id="8_4mrxx"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rwgxs"]
+sky_top_color = Color(0.93510705, 0.55635434, 0.82134336, 1)
+sky_horizon_color = Color(1.0449901, 0.9218337, 0.98485017, 1)
+ground_bottom_color = Color(0.31394696, 0.20007426, 0.18715101, 1)
+ground_horizon_color = Color(1.0449901, 0.9218337, 0.98485017, 1)
+energy_multiplier = 1.45
+
+[sub_resource type="Sky" id="Sky_4wyf3"]
+sky_material = SubResource("ProceduralSkyMaterial_rwgxs")
+
+[sub_resource type="Environment" id="Environment_k0juu"]
+background_mode = 2
+sky = SubResource("Sky_4wyf3")
+tonemap_mode = 2
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rwgxs"]
+radius = 0.7763672
+height = 3.677246
 
 [node name="World" type="Node3D" unique_id=80252885]
 
-[node name="dragonfly" parent="." unique_id=710967787 instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6860113, 0, 0.4693278)
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=596975614]
+environment = SubResource("Environment_k0juu")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=29442098]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_energy = 1.6
+shadow_enabled = true
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1148092743]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.642435, 0)
+script = ExtResource("1_rwgxs")
+
+[node name="Model" parent="Player" unique_id=710967787 instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.0676565, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player" unique_id=982572692]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.7239339, 3.743249, -7.132221)
+top_level = true
+current = true
+script = ExtResource("3_4wyf3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1886142563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.2792034, 0)
+shape = SubResource("CapsuleShape3D_rwgxs")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=314453106]
+use_collision = true
+size = Vector3(64, 1, 64)
+
+[node name="sun2" parent="." unique_id=1416491935 instance=ExtResource("4_k0juu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5305347, 20.392015, -56.256348)
+
+[node name="SunTalk" type="Node3D" parent="." unique_id=1904488369 node_paths=PackedStringArray("line")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.322878)
+script = ExtResource("7_4mrxx")
+line = NodePath("../DialogueLines/StatementSun")
+metadata/_custom_type_script = "uid://bhe338gcwph67"
+
+[node name="DialogueBoxes" type="Control" parent="." unique_id=1462893512]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Regular" type="Control" parent="DialogueBoxes" unique_id=1066572215 node_paths=PackedStringArray("label")]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("5_71j4m")
+label = NodePath("Text")
+
+[node name="Background" type="Control" parent="DialogueBoxes/Regular" unique_id=1921429509]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect2" type="ColorRect" parent="DialogueBoxes/Regular/Background" unique_id=749919347]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 450.0
+offset_right = 1122.0
+offset_bottom = 632.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="DialogueBoxes/Regular/Background" unique_id=641615515]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 458.0
+offset_right = 1114.0
+offset_bottom = 623.0
+
+[node name="Text" type="RichTextLabel" parent="DialogueBoxes/Regular" unique_id=279201938]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 469.0
+offset_right = 1107.0
+offset_bottom = 614.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "hello "
+
+[node name="DialogueLines" type="Node" parent="." unique_id=183059408]
+
+[node name="StatementSun" type="Node" parent="DialogueLines" unique_id=783386562]
+script = ExtResource("6_i7141")
+text = "[wave amp=20.0 freq=5.0 connected=0]hello i am the sun"
+talk_sound = ExtResource("8_4mrxx")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementSun2" type="Node" parent="DialogueLines/StatementSun" unique_id=1155873209]
+script = ExtResource("6_i7141")
+text = "i have been watching [wave amp=20.0 freq=5.0 connected=0]you[/wave]"
+talk_sound = ExtResource("8_4mrxx")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="Sound" type="Node3D" parent="." unique_id=1795944622]
+unique_name_in_owner = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sound" unique_id=1686629649]
+
+[node name="ActionCameras" type="Node3D" parent="." unique_id=47478518]
+
+[node name="Camera3D" type="Camera3D" parent="ActionCameras" unique_id=1320895170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.698284, -30.753359)
