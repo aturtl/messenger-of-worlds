@@ -41,6 +41,7 @@
 [ext_resource type="Script" uid="uid://bs8lrqvfvygki" path="res://scenes/forgot_to_mention.gd" id="30_e75v4"]
 [ext_resource type="AudioStream" uid="uid://1exueptoyvva" path="res://sounds/talk/gambling.mp3" id="37_817gm"]
 [ext_resource type="AudioStream" uid="uid://dgnk3ageoeytm" path="res://sounds/talk/bite_of_87.mp3" id="41_8u370"]
+[ext_resource type="Script" uid="uid://d3575yjlqd57l" path="res://scenes/music_player.gd" id="42_rga7q"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q5onr"]
 animations = [{
@@ -182,7 +183,7 @@ color = Color(0, 0, 0, 0)
 position = Vector2(619, 247)
 sprite_frames = SubResource("SpriteFrames_q5onr")
 animation = &"idle"
-frame_progress = 0.62815255
+frame_progress = 0.44315094
 script = ExtResource("26_4kbfs")
 button = NodePath("../StartGame")
 black_screen = NodePath("../../BlackScreen")
@@ -437,7 +438,8 @@ text = "what's up"
 talk_sound = ExtResource("41_8u370")
 metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
 
-[node name="Sound" type="Node3D" parent="." unique_id=1795944622]
+[node name="MusicPlayer" type="Node3D" parent="." unique_id=1795944622]
 unique_name_in_owner = true
+script = ExtResource("42_rga7q")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sound" unique_id=1686629649]
+[node name="Music" type="AudioStreamPlayer" parent="MusicPlayer" unique_id=1686629649]

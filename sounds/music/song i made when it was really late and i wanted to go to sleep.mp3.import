@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cl7dcpgybswyi"
+path="res://.godot/imported/song i made when it was really late and i wanted to go to sleep.mp3-d5a40c8a9bb09eda49c1260a0e52c6b1.mp3str"
+
+[deps]
+
+source_file="res://sounds/music/song i made when it was really late and i wanted to go to sleep.mp3"
+dest_files=["res://.godot/imported/song i made when it was really late and i wanted to go to sleep.mp3-d5a40c8a9bb09eda49c1260a0e52c6b1.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -12,6 +12,7 @@ func _ready():
 
 
 func _button_press():
+	%MusicPlayer.stop_music()
 	print("clicked")
 	button.button_down.disconnect(_button_press)
 	var tween = get_tree().create_tween()
