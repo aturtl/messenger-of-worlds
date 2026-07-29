@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d30xet1i4wiom"]
+
+[ext_resource type="Texture2D" uid="uid://biya00dkb1mbf" path="res://tile.png" id="1_sjabt"]
+
+[resource]
+shading_mode = 0
+albedo_color = Color(0, 0.893453, 0.8208768, 1)
+albedo_texture = ExtResource("1_sjabt")
+uv1_scale = Vector3(0.25, 0.25, 0.25)
+uv1_offset = Vector3(0, 0.25, 0)
+uv1_triplanar = true
+texture_filter = 0

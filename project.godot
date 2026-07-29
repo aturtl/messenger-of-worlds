@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 Dialogue="*uid://e5qtadsukqcn"
 GlobalVariables="*uid://dh8not7piq36a"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [input]
 
 move_left={

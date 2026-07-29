@@ -39,3 +39,11 @@ I will also be focusing on quality over quantity this time (unlike GWJ#94). My g
 7/28:
 	- Animated player running, idle, and jump animations
 		- This took a lot longer than I expected! Animations can get very buggy. But I think next time I'll be able to do this much faster.
+	- Happy flower sprite! Found out there's an AnimatedSprite3D. I wonder how long that existed.
+	- Added and animated the buildonk objective
+	- Made intro use enter rather than clickable button for accessibility
+	- Flowerhead interaction
+	- Made flowerhead ability (gun next probably unless I have a better idea)
+	- Floor tiling
+	- Added catlo. One of 7 catlo collectibles.
+	- Messed with the lighting. MADE THE SKY PURPLE. And changed colors and stuff.

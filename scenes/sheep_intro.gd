@@ -1,10 +1,14 @@
 extends AnimatedSprite2D
 
 
-@export var button: TextureButton
+@export var instructions: RichTextLabel
 @export var black_screen: ColorRect
 
 @export var skip_intro = false
+
+
+var await_interact = true
+
 
 func _ready():
 	if skip_intro:
@@ -14,16 +18,20 @@ func _ready():
 		get_parent().queue_free()
 		return
 	play("idle")
-	print(button.is_node_ready())
-	button.button_down.connect(_button_press)
 
 
-func _button_press():
+func _physics_process(delta):
+	if await_interact and Input.is_action_pressed("interact"):
+		await_interact = false
+		interacted()
+
+
+func interacted():
 	%MusicPlayer.stop_music()
+	%SoundEffects.play_sound_effect("Start")
 	print("clicked")
-	button.button_down.disconnect(_button_press)
 	var tween = get_tree().create_tween()
-	tween.tween_property(button, "position:y", 500.0, .5).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_ELASTIC)
+	tween.tween_property(instructions, "position:y", 550.0, .5).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_ELASTIC)
 	tween.play()
 	await animation_looped
 	play("start")

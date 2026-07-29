@@ -9,11 +9,11 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_enfo0"]
 shading_mode = 0
-albedo_color = Color(1, 0.3137255, 0.38431373, 1)
+albedo_color = Color(0.9999775, 0.2576448, 0.3994196, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3tf3"]
 shading_mode = 0
-albedo_color = Color(0.6431373, 0.03137255, 0, 1)
+albedo_color = Color(0.81046283, 0.0372513, 4.1296185e-05, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gxffh"]
 transparency = 1
@@ -52,12 +52,12 @@ orientation = 2
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtd5v"]
 shading_mode = 0
 disable_ambient_light = true
-albedo_color = Color(1, 1, 0.03529412, 1)
+albedo_color = Color(0.99999994, 0.9358591, 0.26116765, 1)
 disable_receive_shadows = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dhcfm"]
 shading_mode = 0
-albedo_color = Color(0.87177366, 0.5113308, 0.19984648, 1)
+albedo_color = Color(0.9180456, 0.46202618, 0, 1)
 
 [node name="sun" unique_id=1416491935 instance=ExtResource("1_iveel")]
 

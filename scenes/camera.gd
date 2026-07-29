@@ -16,6 +16,12 @@ func _physics_process(delta):
 	
 	rotation.y = -atan2(dir_to_no_y.z,dir_to_no_y.x) - PI/2.0
 	
+	look_at(player.position)
+	
+	if position.y < player.position.y + 2.0:
+		var diff = player.position.y + 2.0 - position.y
+		position.y = lerp(position.y, position.y+diff, max_lerp_factor * delta)
+	
 	var correction = dist - max_dist
 	
 	if dist > max_dist:
