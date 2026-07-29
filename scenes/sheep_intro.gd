@@ -4,8 +4,15 @@ extends AnimatedSprite2D
 @export var button: TextureButton
 @export var black_screen: ColorRect
 
+@export var skip_intro = false
 
 func _ready():
+	if skip_intro:
+		await get_tree().create_timer(.5).timeout
+		%MusicPlayer.stop_music()
+		%Player.player_lock = false
+		get_parent().queue_free()
+		return
 	play("idle")
 	print(button.is_node_ready())
 	button.button_down.connect(_button_press)
@@ -24,7 +31,6 @@ func _button_press():
 	play("end")
 	await fade_to_black()
 	Dialogue.start(%DialogueLines.get_node("StatementSun"))
-	await Dialogue.ended
 
 
 func fade_to_black():
@@ -37,4 +43,4 @@ func fade_to_black():
 	anim_tween.play()
 	tween.tween_property(black_screen, "color:a", 0.0, 1.0)
 	await anim_tween.finished
-	self.queue_free()
+	get_parent().queue_free()

@@ -33,3 +33,9 @@ I will also be focusing on quality over quantity this time (unlike GWJ#94). My g
 	- Made the dialogue system connect directly with the cutscene system. It's kind of messy, but I've made too many dialogue systems. I want to work on the rest of the game.
 	- Gave the dragonfly a voice which is honestly just sampled from LETS GO GAMBLING at a higher volume
 	- Added some... late night music?
+	- Okay, one last thing. THEN, I WILL GO TO SLEEP. I realized that my eyes don't work (they really don't) and 
+	  the game jam was 5 days long instead of 4 days. THAT MEANS I CAN ACTUALLY SPEND TIME MAKING THE GAME PART OF THE GAME
+
+7/28:
+	- Animated player running, idle, and jump animations
+		- This took a lot longer than I expected! Animations can get very buggy. But I think next time I'll be able to do this much faster.

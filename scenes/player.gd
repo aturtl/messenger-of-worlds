@@ -3,6 +3,8 @@ extends CharacterBody3D
 @onready var cam: Camera3D = $PlayerCamera
 @onready var model: Node3D = $Model
 
+@onready var anim_player: AnimationPlayer = $Model/AnimationPlayer
+
 var player_lock = true
 
 var cam_y_rot: float = 0.0
@@ -14,6 +16,7 @@ var drag_amount: float = 64.0
 
 var jump_amount = 12.0
 var jumping: bool = false
+var successful_jump: bool = false
 
 var model_rotate_lerp_amount = 12.0
 
@@ -24,7 +27,43 @@ var gravity = 18.0
 var move_velocity: Vector3
 var grav_velocity: Vector3
 
+var last_anim: String
+var current_anim: String
+
+
+func play_anim(n):
+	current_anim = n
+	if current_anim != last_anim:
+		last_anim = n
+		anim_player.play(n)
+
+
+func _ready():
+	anim_player.set_blend_time("dragonfly/Run", "dragonfly/Idle", .3)
+	anim_player.set_blend_time("dragonfly/Idle", "dragonfly/Run", .2)
+	anim_player.set_blend_time("dragonfly/Hover", "dragonfly/Idle", .2)
+	anim_player.set_blend_time("dragonfly/JumpPrime", "dragonfly/Hover", .4 )
+	
+	anim_player.set_blend_time("dragonfly/Idle", "dragonfly/Hover", .2)
+	anim_player.set_blend_time("dragonfly/Run", "dragonfly/Hover", .2)
+	
+
+
+func manage_animations():
+	anim_player.speed_scale = 1.0
+	
+	if not is_on_floor():
+		play_anim("dragonfly/Hover")
+	elif move_velocity.length() >= 1.0:
+		play_anim("dragonfly/Run")
+		anim_player.speed_scale = move_velocity.length()*.1
+	else:
+		play_anim("dragonfly/Idle")
+
+
 func _physics_process(delta):
+	successful_jump = false
+	
 	if player_lock:
 		return
 	
@@ -57,11 +96,14 @@ func _physics_process(delta):
 	
 	if is_on_floor():
 		if jumping:
+			successful_jump = true
 			grav_velocity.y = jump_amount
 		else:
 			grav_velocity.y = 0.0
 	else:
 		grav_velocity.y -= gravity * delta
+	
+	manage_animations()
 	
 	velocity = move_velocity + grav_velocity
 	
