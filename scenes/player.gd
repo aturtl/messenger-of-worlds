@@ -22,7 +22,7 @@ var drag_amount: float = 64.0
 
 var max_speed = 40.0
 
-var jump_amount = 12.0
+var jump_amount = 18.0
 var jumping: bool = false
 var successful_jump: bool = false
 
@@ -149,7 +149,7 @@ func _physics_process(delta):
 	elif flowerhead_activated and current_flowerhead_activation < max_flowerhead_activation:
 		current_flowerhead_activation += delta
 		var red_amount = current_flowerhead_activation/max_flowerhead_activation
-		flowerhead_particle.mesh.get_material().albedo_color = Color(1,1-red_amount,1-red_amount)
+		flowerhead_particle.mesh.get_material().albedo_color = Color(1,1-red_amount,1)
 		flowerhead_particle.emitting = true
 		successful_jump = true
 		grav_velocity.y = jump_amount

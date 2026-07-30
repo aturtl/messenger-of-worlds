@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://biya00dkb1mbf" path="res://tile.png" id="1_feghv"]
 
 [resource]
-shading_mode = 0
+albedo_color = Color(0.8431839, 0.8431839, 0.84318376, 1)
 albedo_texture = ExtResource("1_feghv")
 uv1_scale = Vector3(0.25, 0.25, 0.25)
 uv1_offset = Vector3(0, 0.25, 0)

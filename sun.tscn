@@ -16,7 +16,9 @@ shading_mode = 0
 albedo_color = Color(0.81046283, 0.0372513, 4.1296185e-05, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gxffh"]
-transparency = 1
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
 shading_mode = 0
 albedo_texture = ExtResource("2_gtd5v")
 texture_filter = 0
@@ -27,7 +29,9 @@ size = Vector2(12, 12)
 orientation = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2nmf8"]
-transparency = 1
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
 shading_mode = 0
 albedo_texture = ExtResource("2_gtd5v")
 uv1_scale = Vector3(-1, 1, 1)
@@ -39,7 +43,9 @@ size = Vector2(12, 12)
 orientation = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xtwxc"]
-transparency = 1
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
 shading_mode = 0
 albedo_texture = ExtResource("3_enfo0")
 texture_filter = 0

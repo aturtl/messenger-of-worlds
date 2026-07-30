@@ -22,7 +22,9 @@ GlobalVariables="*uid://dh8not7piq36a"
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [input]
 

@@ -11,10 +11,25 @@ void vertex() {
 
 void fragment() {
 	// Called for every pixel the material is visible on.
-	float texel_uv_x = floor(SCREEN_UV.x*640.0)/640.0;
-	float texel_uv_y = floor(SCREEN_UV.y*360.0)/360.0;
 	
-	vec2 texel_uv = SCREEN_UV + vec2(sin(TIME/1.5)*.01, cos(TIME/1.5)*.01);
+	float x_pixellate = 512.0;
+	float y_pixellate = 512.0;
+	
+	vec2 offset_uv = SCREEN_UV + vec2(sin(TIME/1.5)*.01, cos(TIME/1.5)*.01);
+	
+	vec2 center = vec2(.5, .5);
+	
+	vec2 dist = abs(center - offset_uv);
+	
+	
+	x_pixellate *= smoothstep(.7,.3,dist.x);
+	y_pixellate *= smoothstep(.7,.3,dist.y);
+
+	
+	float texel_uv_x = floor(offset_uv.x*x_pixellate)/(x_pixellate);
+	float texel_uv_y = floor(offset_uv.y*y_pixellate)/(y_pixellate);
+	
+	vec2 texel_uv = vec2(texel_uv_x, texel_uv_y);
 	
 	vec4 color = texture(screen_texture, texel_uv);
 	

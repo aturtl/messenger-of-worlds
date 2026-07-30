@@ -10,7 +10,9 @@ func interpolate_to_cutscene_camera(cc: CutsceneCamera):
 
 
 func _physics_process(delta):
-	rotation.x = lerp_angle(rotation.x, cutscene_camera.rotation.x, cutscene_camera.weight)
-	rotation.y = lerp_angle(rotation.y, cutscene_camera.rotation.y, cutscene_camera.weight)
-	rotation.z = lerp_angle(rotation.z, cutscene_camera.rotation.z, cutscene_camera.weight)
-	position = position.lerp(cutscene_camera.position, cutscene_camera.weight)
+	global_rotation.x = lerp_angle(global_rotation.x, cutscene_camera.global_rotation.x, cutscene_camera.weight)
+	global_rotation.y = lerp_angle(global_rotation.y, cutscene_camera.global_rotation.y, cutscene_camera.weight)
+	global_rotation.z = lerp_angle(global_rotation.z, cutscene_camera.global_rotation.z, cutscene_camera.weight)
+	global_position = global_position.lerp(cutscene_camera.global_position, cutscene_camera.weight)
+	
+	fov = lerp(fov, cutscene_camera.fov, cutscene_camera.weight)
