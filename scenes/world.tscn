@@ -46,12 +46,16 @@
 [ext_resource type="Material" uid="uid://bimjfkwavunlk" path="res://materials/tile_gray.tres" id="39_e6ckp"]
 [ext_resource type="Material" uid="uid://d30xet1i4wiom" path="res://materials/tile_aqua.tres" id="40_mvg0v"]
 [ext_resource type="AudioStream" uid="uid://dgnk3ageoeytm" path="res://sounds/talk/bite_of_87.mp3" id="41_8u370"]
+[ext_resource type="Script" uid="uid://bblq1nmmqngx" path="res://scenes/scissors_follow.gd" id="41_ygn2i"]
 [ext_resource type="Script" uid="uid://d3575yjlqd57l" path="res://scenes/music_player.gd" id="42_rga7q"]
 [ext_resource type="Shader" uid="uid://0456n8a72uhv" path="res://scenes/weird.gdshader" id="43_6oujy"]
 [ext_resource type="AudioStream" uid="uid://ubwddnphmqiw" path="res://sounds/talk/flowery2.mp3" id="45_pf35h"]
 [ext_resource type="Texture2D" uid="uid://bqu5dqke7uf16" path="res://flowerhead.png" id="47_4wdv8"]
+[ext_resource type="AudioStream" uid="uid://vbuy0e7sewsr" path="res://sounds/talk/me.mp3" id="48_4kmvx"]
 [ext_resource type="Script" uid="uid://ck1gxggo1pbnh" path="res://scenes/autoplay_animated_sprite_3d.gd" id="48_d46x8"]
 [ext_resource type="PackedScene" uid="uid://skbtvcvj1xxh" path="res://buildonk.fbx" id="49_3l05q"]
+[ext_resource type="AudioStream" uid="uid://7nnsg1weulua" path="res://sounds/talk/me_evil.mp3" id="49_myjip"]
+[ext_resource type="AudioStream" uid="uid://hox3irkw3wys" path="res://sounds/talk/me_eviler.mp3" id="50_5nedk"]
 [ext_resource type="Script" uid="uid://doye3u0wu8daa" path="res://scenes/shader.gd" id="50_e6ckp"]
 [ext_resource type="Script" uid="uid://d05emfmmew0bs" path="res://buildonk.gd" id="50_x28ej"]
 [ext_resource type="Texture2D" uid="uid://b01e4ve26nraq" path="res://poorlydrawnarrow.png" id="51_1jxku"]
@@ -65,6 +69,36 @@
 [ext_resource type="Texture2D" uid="uid://cqswwdy1qgd2f" path="res://flower_evil_0000.png" id="62_q57r8"]
 [ext_resource type="Texture2D" uid="uid://dnvkkepgxb0c4" path="res://flower_evil_0001.png" id="63_4kmvx"]
 [ext_resource type="Texture2D" uid="uid://bbtdp5abmx647" path="res://flower_sad_0001.png" id="63_pq8jk"]
+[ext_resource type="AudioStream" uid="uid://cybv7prj4lhie" path="res://sounds/sound_effects/pixabay_universfield-cartoon-explosion-567193.mp3" id="65_5p8eo"]
+[ext_resource type="AudioStream" uid="uid://82ao8o3y4egd" path="res://sounds/talk/windows_error.mp3" id="67_8xaka"]
+[ext_resource type="AudioStream" uid="uid://crosigyl34bif" path="res://sounds/talk/mariogameover.mp3" id="68_n6seq"]
+[ext_resource type="AudioStream" uid="uid://7mny07ys0l04" path="res://sounds/talk/hotdog.mp3" id="68_swu3i"]
+[ext_resource type="Texture2D" uid="uid://38i4gtvydawp" path="res://you_got_0000.png" id="69_ntuqo"]
+[ext_resource type="Script" uid="uid://ckj307pevofux" path="res://scenes/yougot_scissors.gd" id="69_qaasp"]
+[ext_resource type="Texture2D" uid="uid://doo6a5jx7r62n" path="res://you_got_0001.png" id="70_ca4ee"]
+[ext_resource type="Texture2D" uid="uid://b5hr0rnclqjvl" path="res://you_got_0002.png" id="71_qaasp"]
+[ext_resource type="AudioStream" uid="uid://jrcfkl66twgk" path="res://sounds/talk/plat_eviler.mp3" id="71_xgy6y"]
+[ext_resource type="Texture2D" uid="uid://p3h3jwgyaskw" path="res://edward_0000.png" id="72_1v02h"]
+[ext_resource type="Script" uid="uid://thv2t2pqrhli" path="res://scenes/autoplay_animated_sprite_2d.gd" id="72_ca4ee"]
+[ext_resource type="Script" uid="uid://crjuu24sn2lkk" path="res://scenes/scissor_killable.gd" id="72_kvmu4"]
+[ext_resource type="AudioStream" uid="uid://2getynq6gpef" path="res://sounds/talk/frog.mp3" id="73_grmox"]
+[ext_resource type="Texture2D" uid="uid://q01ndoemie5b" path="res://edward_0001.png" id="73_shehe"]
+[ext_resource type="Script" uid="uid://k34du8txfs75" path="res://scenes/got_scissor.gd" id="74_l137e"]
+[ext_resource type="Texture2D" uid="uid://d1xk5qu88v7b4" path="res://YOUGOTENTERCONTINUE_0000.png" id="74_shehe"]
+[ext_resource type="Texture2D" uid="uid://dqbncmn72owog" path="res://YOUGOTENTERCONTINUE_0001.png" id="75_l137e"]
+[ext_resource type="AudioStream" uid="uid://cope2b5ib2y5i" path="res://sounds/talk/hi it is me the scissors.mp3" id="79_l137e"]
+[ext_resource type="Script" uid="uid://drxw4ki7gdl8t" path="res://scenes/display_interact.gd" id="82_c15v2"]
+[ext_resource type="Texture2D" uid="uid://b65ac5h2ksd4k" path="res://interact_0000.png" id="82_kcpaj"]
+[ext_resource type="Texture2D" uid="uid://du8wdc5n1cpup" path="res://interact_0001.png" id="83_c15v2"]
+[ext_resource type="Texture2D" uid="uid://bcglp6hbuq0ca" path="res://interact_0002.png" id="84_grmox"]
+[ext_resource type="Script" uid="uid://c8715lqqo8evk" path="res://scenes/scissors_giveable.gd" id="90_gny1c"]
+[ext_resource type="Texture2D" uid="uid://ba0de6270ahtn" path="res://flower_power.png" id="91_frq1x"]
+[ext_resource type="Script" uid="uid://ds4wio1mb8g46" path="res://scenes/flower_count.gd" id="92_ebmc1"]
+[ext_resource type="Script" uid="uid://p8ppx5kqxgws" path="res://scenes/flower_power_hover.gd" id="92_mlb8o"]
+[ext_resource type="Script" uid="uid://c0intt0sfpkgq" path="res://scenes/you_may_now_return.gd" id="94_ufs10"]
+[ext_resource type="Script" uid="uid://cxtmcf57rl17i" path="res://catlo_2.gd" id="97_h5nhj"]
+[ext_resource type="Script" uid="uid://c6wqc5nuc4ggm" path="res://catlo_3.gd" id="98_q6do4"]
+[ext_resource type="Script" uid="uid://b62fv7pjb8684" path="res://scenes/debugtp.gd" id="99_pb8sg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q5onr"]
 animations = [{
@@ -367,10 +401,28 @@ material = SubResource("StandardMaterial3D_pf35h")
 size = Vector2(6, 6)
 orientation = 2
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_n78cu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("72_1v02h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_shehe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kvmu4"]
+size = Vector3(1.1467285, 0.6040039, 0.08105469)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_npbic"]
 render_priority = -1
 shader = ExtResource("43_6oujy")
 shader_parameter/texel_size = 0.0
+shader_parameter/weirder = false
 
 [sub_resource type="QuadMesh" id="QuadMesh_e6ckp"]
 material = SubResource("ShaderMaterial_npbic")
@@ -405,6 +457,9 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_q6do4"]
+radius = 17.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1dgkn"]
 atlas = ExtResource("51_1jxku")
@@ -531,8 +586,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_lnsko")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_npbic"]
-albedo_color = Color(0.6896181, 0, 0.31946266, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ufs10"]
+albedo_color = Color(0.9999998, 0.20885351, 0.9033684, 1)
 metallic = 0.9
 clearcoat_enabled = true
 
@@ -587,6 +642,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kvmu4"]
+radius = 5.0
+height = 13.0
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_myjip"]
 animations = [{
 "frames": [{
@@ -615,6 +674,192 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_ygn2i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("69_ntuqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_ca4ee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_qaasp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oexs8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("74_shehe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_l137e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_swu3i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("72_1v02h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_shehe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xgy6y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("82_kcpaj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_c15v2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_grmox")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="World3D" id="World3D_mlb8o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frq1x"]
+atlas = ExtResource("91_frq1x")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xaka"]
+atlas = ExtResource("91_frq1x")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n6seq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frq1x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xaka")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_h5nhj"]
+resource_name = "catlo_Icosphere_003"
+_surfaces = [{
+"aabb": AABB(-0.894425, -1, -0.85064, 1.78885, 2, 1.70128),
+"attribute_data": PackedByteArray("0UWv1xZdYK+ii///0UURh4su//+ii2CvXHQRh+iir9ctumCv6KIRh7no//9z0RGHRRev14suYK8AAGCvRRcRh1x0r9cWXf//c9Gv1y26//+56GCv//+v1w=="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("BAAMAAAADAANAAAADAAOAA0ADgAPAA0AAAANAAEADQADAAEAAAABABAAAAAQABEAEAABAAUAAQAGAAUAEAAFAAcAAgAQAAcABwAFAAgABQAJAAgABwAIABIAEwAHABIAEgAIABQACAALABQAEgAUABUACgASABUA"),
+"lods": [1.3818927, PackedByteArray("AAABAAIAAAADAAEABAADAAAAAgABAAUAAQAGAAUAAgAFAAcABwAFAAgABQAJAAgABwAIAAoACgAIAAsA")],
+"material": SubResource("StandardMaterial3D_3rg30"),
+"name": "Material.002",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("jOfBRhrPeqr//z25/38mwv9/AAD/f/b2/3////9/dMj/fwAA/3/+wIynPbkAAIrz/3////9/XeVyWMFGAACK83IYPbnkMLPa/3////9/9vb/fwAA/390yP9/////f1TVcljBRv//MpeMpz25///AlnIYPbkaz4up/3////9//sCM58FG5DCz2v9/AAD/f1TVAADBRv9/JsL/fwAA/39d5XIYPbkaz/qscljBRv//cZsZXa00DKmGFJp2skSx32U/yh6acHubwgP9zPwZg2Q8/FmLXt5kiUy7TSCZwKqqqqrFOKGlDNH4Rey2+M404WSPpXSgIVRVVFXyVnjrATMC5saYlMiWKS3T")
+}, {
+"aabb": AABB(-1.7158978, -8.938248, -13.635724, 6.6881227, 13.264006, 16.604012),
+"attribute_data": PackedByteArray("186kPlLYaz/AExI/N4NuP4a2Hj5R2Gs/TwgAP1HYaz/YRRc/UdhrPwAAAAAAAIA/AAAAAAAAgD8iows+UthrP1WXEz5S2Gs/YrpoPlLYaz9jumg+UdhrPwAAAABWYS8/Gn6uPumcST8iCK09q5QWPwAAAABWYS8/DmGhPvCMHD8iCK09q5QWP3Txpz5R2Gs/oajWPjItLD/CpyU/OT8xP/E6Pz9R2Gs/NpdNP8imKj8KoDE/UdhrP3jRRT9R2Gs/5a5dP1HYaz8YXXQ/UthrP7aMaz9S2Gs/2EUXP6g5Gz+F7yM/qDkbP9hFFz+oORs/qIsuP6g5Gz+F7yM/qDkbP4XvIz+oORs/wOgiP/kRBz/A6CI/+REHP8iGGD8lzlM/YohOP77nTj8eRHs/lX1PPxJddD9R2Gs/MBJdP1LYaz940UU/UthrP6iLLj9R2Gs/qIsuP1LYaz9YzxY/UthrPwTpAj9R2Gs/ZHQRP1LYaz9r2+M+EW5LP4L3zj5R2Gs/AAAAAAAAgD8AAAAAAACAP/DSQj4TDU8/I6MLPlHYaz/eT5Q9lX1PP5J0UT5S2Gs/"),
+"format": 34359742487,
+"index_count": 144,
+"index_data": PackedByteArray("IwATACQAFAAjACQAJAATABUAJAAVACUAJgAkACUAGAAkACYAGAAmACcAJwAmABkAGQAaACcAFAAoACkAKQAoABYAFgAoABcAKQAWACoAAwAjAAQABAArAAMAKwAsAAMAKwAtACwAAQAsAC0AAAAsAAEAAAABAAIAAwAuACMAEQAvAAAABQABAAYABQAwADEALgATACMADAAuABEALgASABMALgAMABIAEwAcAB4AHAAfAB4AGwAcABMAGwAdABwAHAAgACEAIQAiABwAMgAPAAwACgAyAAwAMgANAA8ADQAQAA8ACgAzADIAMwA0ADIANAANADIANAALAA0ACwAOAA0AMwAKAAgACgAJAAgACAAJADUAAgAIADUAAgAHAAgA"),
+"lods": [15.43311, PackedByteArray("AAABAAIAAQAAAAMABAABAAMABQABAAYAAgAHAAgACAAJAAIACgAJAAgACwAKAAgACgALAAwACwANAAwACwAOAA0ADAANAA8ADQAQAA8AEQAMABIAEQASABMAEQATAAQAFAATABUAFgAUABcAGAAVABkAGQAaABgAGwAcABMAGwAdABwAEwAcAB4AHAAfAB4AHAAgACEAIQAiABwA")],
+"material": SubResource("StandardMaterial3D_r6hut"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 54,
+"vertex_data": PackedByteArray("uGJGQKo4AMFg4qS+wCYoP7yq+sCWkO7A4bfCP0gVAMHg6xY+2BFIQJ/kkcAq4BS/eE4ZPqJzmMDcDQjA4bfCP0gVAMHg6xY+IHIdvhADD8Gkse0/IHIdvhADD8Gkse0/ETClPzIu5MBwsmA+uGJGQKo4AMFg4qS+2BFIQJ/kkcAq4BS/VMBIv6TcWD9E6APAeByfQEUPFMAWBB+/YparP5RFuT8AxSK/HAzqPpxsikBANy3AMh18QIzXhj9sxg/Abv9MQAIUgUAoZynA2BFIQJ/kkcAq4BS/Mh18QIzXhj9sxg/A5MbqPoClYT2AgpfAeE4ZPqJzmMDcDQjAVMBIv6TcWD9E6APAwCYoP7yq+sCWkO7AIHIdvhADD8Gkse0/eE4ZPqJzmMDcDQjAETClPzIu5MBwsmA+IHIdvhADD8Gkse0/Mh18QIzXhj9sxg/AoEKvP3jxcD9ZUQnAbv9MQAIUgUAoZynAVMBIv6TcWD9E6APAHAzqPpxsikBANy3Abv9MQAIUgUAoZynAYparP5RFuT8AxSK/HAzqPpxsikBANy3Al5HLP9hGT8BCo43AiqLbv4VGPcDplc6/iDsjPjTKIsBXMTBAn7V1P8/hjcBM0pc+YDLpvccC18DgtcfAYDLpvccC18DgtcfAMUKWP5KBssC6PO3ABnNmQI6iT8DtK1rBMUKWP5KBssC6PO3A3BFKQMPr1sD6Z+LABnNmQI6iT8DtK1rBxYaOQBKCE8DQRVHA3BFKQMPr1sD6Z+LA/FroP8jnDsHBgQRAuGJGQKo4AMFg4qS+gAw2QKLTLMBp+D1An7V1P8/hjcBM0pc+iDsjPjTKIsBXMTBA/FroP8jnDsHBgQRAzbxDVz/co4WIN4Ei2dkT99KH3w2LoIk8EsMOWqBCqozsLvRDbDZ8DtKH3w3///8/vGLDYP///z+8YsNguaHFJJ9mMqMPw0MczbxDV9D/k+wSww5atO0k7jExBbkPd5zCq+DRdOf7HfVFfPHBI+J2urdbjPr///+/V87iwSzSQoqbsLHo////vxLDDlrO3cSEV87iwcwSue5OIl3pliDevewu9EMfZ/3EMTEFuZB1k8GIN4EiI4XjWbxiw2D+rEoq7C70Q3p3w7efZjKjnK96q7xiw2D///8/V87iwcg7/OU4PwL+6QPjvpuwsej///+/MTEFubJQDZ+3W4z6////v5uwsej///+/RXzxwf///z+3W4z6////vyjRsAA8BrK9hBvkW7tzgcMtU3h4D8Z2xzRi4UziqK3OrQh+otdk7sCtCH6ih2hOx/BIC9xRbbHHidr66uxK34TwSAvcfyXbnV3sUFcOIJT5idr66nAt5tYH7v093wKMm13sUFcUF0eM7nsPUv///z/NvENX////P52jp3RU/AGrNGLhTKLQmqotU3h4Lsmjue57D1Kc0DJk")
+}, {
+"aabb": AABB(2.649619, -0.9999995, -1.3480481, 1.7888498, 2, 1.70128),
+"attribute_data": PackedByteArray("0UWv1xZdYK+ii///0UURh4su//+ii2CvXHQRh+iir9ctumCv6KIRh7no//9z0RGHRRev14suYK8AAGCvRRcRh1x0r9cWXf//c9Gv1y26//+56GCv//+v1w=="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("BAAMAAAADAANAAAADAAOAA0ADgAPAA0AAAANAAEADQADAAEAAAABABAAAAAQABEAEAABAAUAAQAGAAUAEAAFAAcAAgAQAAcABwAFAAgABQAJAAgABwAIABIAEwAHABIAEgAIABQACAALABQAEgAUABUACgASABUA"),
+"lods": [1.3818928, PackedByteArray("AAABAAIAAAADAAEABAADAAAAAgABAAUAAQAGAAUAAgAFAAcABwAFAAgABQAJAAgABwAIAAoACgAIAAsA")],
+"material": SubResource("StandardMaterial3D_esfkd"),
+"name": "Material.003",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("jOfBRhrPeqr//z25/38mwv9/AAD/f/b2/3////9/dMj/fwAA/3/+wIynPbkAAIrz/3////9/XeVyWMFGAACK83IYPbnkMLPa/3////9/9vb/fwAA/390yP9/////f1TVcljBRv//MpeMpz25///AlnIYPbkaz4up/3////9//sCM58FG5DCz2v9/AAD/f1TVAADBRv9/JsL/fwAA/39d5XIYPbkaz/qscljBRv//cZsZXa00DKmGFJp2skSx32U/yh6acHubwgP9zPwZg2Q8/FmLXt5kiUy7TSCZwKqqqqrFOKGlDNH4Rey2+M404WSPpXSgIVRVVFXyVnjrATMC5saYlMiWKS3T")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_lnsko")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q6do4"]
+albedo_color = Color(0, 0.78204745, 0.9631601, 1)
+metallic = 0.9
+clearcoat_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_q6do4"]
+resource_name = "catlo_Icosphere_003"
+_surfaces = [{
+"aabb": AABB(-0.894425, -1, -0.85064, 1.78885, 2, 1.70128),
+"attribute_data": PackedByteArray("0UWv1xZdYK+ii///0UURh4su//+ii2CvXHQRh+iir9ctumCv6KIRh7no//9z0RGHRRev14suYK8AAGCvRRcRh1x0r9cWXf//c9Gv1y26//+56GCv//+v1w=="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("BAAMAAAADAANAAAADAAOAA0ADgAPAA0AAAANAAEADQADAAEAAAABABAAAAAQABEAEAABAAUAAQAGAAUAEAAFAAcAAgAQAAcABwAFAAgABQAJAAgABwAIABIAEwAHABIAEgAIABQACAALABQAEgAUABUACgASABUA"),
+"lods": [1.3818927, PackedByteArray("AAABAAIAAAADAAEABAADAAAAAgABAAUAAQAGAAUAAgAFAAcABwAFAAgABQAJAAgABwAIAAoACgAIAAsA")],
+"material": SubResource("StandardMaterial3D_3rg30"),
+"name": "Material.002",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("jOfBRhrPeqr//z25/38mwv9/AAD/f/b2/3////9/dMj/fwAA/3/+wIynPbkAAIrz/3////9/XeVyWMFGAACK83IYPbnkMLPa/3////9/9vb/fwAA/390yP9/////f1TVcljBRv//MpeMpz25///AlnIYPbkaz4up/3////9//sCM58FG5DCz2v9/AAD/f1TVAADBRv9/JsL/fwAA/39d5XIYPbkaz/qscljBRv//cZsZXa00DKmGFJp2skSx32U/yh6acHubwgP9zPwZg2Q8/FmLXt5kiUy7TSCZwKqqqqrFOKGlDNH4Rey2+M404WSPpXSgIVRVVFXyVnjrATMC5saYlMiWKS3T")
+}, {
+"aabb": AABB(-1.7158978, -8.938248, -13.635724, 6.6881227, 13.264006, 16.604012),
+"attribute_data": PackedByteArray("186kPlLYaz/AExI/N4NuP4a2Hj5R2Gs/TwgAP1HYaz/YRRc/UdhrPwAAAAAAAIA/AAAAAAAAgD8iows+UthrP1WXEz5S2Gs/YrpoPlLYaz9jumg+UdhrPwAAAABWYS8/Gn6uPumcST8iCK09q5QWPwAAAABWYS8/DmGhPvCMHD8iCK09q5QWP3Txpz5R2Gs/oajWPjItLD/CpyU/OT8xP/E6Pz9R2Gs/NpdNP8imKj8KoDE/UdhrP3jRRT9R2Gs/5a5dP1HYaz8YXXQ/UthrP7aMaz9S2Gs/2EUXP6g5Gz+F7yM/qDkbP9hFFz+oORs/qIsuP6g5Gz+F7yM/qDkbP4XvIz+oORs/wOgiP/kRBz/A6CI/+REHP8iGGD8lzlM/YohOP77nTj8eRHs/lX1PPxJddD9R2Gs/MBJdP1LYaz940UU/UthrP6iLLj9R2Gs/qIsuP1LYaz9YzxY/UthrPwTpAj9R2Gs/ZHQRP1LYaz9r2+M+EW5LP4L3zj5R2Gs/AAAAAAAAgD8AAAAAAACAP/DSQj4TDU8/I6MLPlHYaz/eT5Q9lX1PP5J0UT5S2Gs/"),
+"format": 34359742487,
+"index_count": 144,
+"index_data": PackedByteArray("IwATACQAFAAjACQAJAATABUAJAAVACUAJgAkACUAGAAkACYAGAAmACcAJwAmABkAGQAaACcAFAAoACkAKQAoABYAFgAoABcAKQAWACoAAwAjAAQABAArAAMAKwAsAAMAKwAtACwAAQAsAC0AAAAsAAEAAAABAAIAAwAuACMAEQAvAAAABQABAAYABQAwADEALgATACMADAAuABEALgASABMALgAMABIAEwAcAB4AHAAfAB4AGwAcABMAGwAdABwAHAAgACEAIQAiABwAMgAPAAwACgAyAAwAMgANAA8ADQAQAA8ACgAzADIAMwA0ADIANAANADIANAALAA0ACwAOAA0AMwAKAAgACgAJAAgACAAJADUAAgAIADUAAgAHAAgA"),
+"lods": [15.43311, PackedByteArray("AAABAAIAAQAAAAMABAABAAMABQABAAYAAgAHAAgACAAJAAIACgAJAAgACwAKAAgACgALAAwACwANAAwACwAOAA0ADAANAA8ADQAQAA8AEQAMABIAEQASABMAEQATAAQAFAATABUAFgAUABcAGAAVABkAGQAaABgAGwAcABMAGwAdABwAEwAcAB4AHAAfAB4AHAAgACEAIQAiABwA")],
+"material": SubResource("StandardMaterial3D_r6hut"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 54,
+"vertex_data": PackedByteArray("uGJGQKo4AMFg4qS+wCYoP7yq+sCWkO7A4bfCP0gVAMHg6xY+2BFIQJ/kkcAq4BS/eE4ZPqJzmMDcDQjA4bfCP0gVAMHg6xY+IHIdvhADD8Gkse0/IHIdvhADD8Gkse0/ETClPzIu5MBwsmA+uGJGQKo4AMFg4qS+2BFIQJ/kkcAq4BS/VMBIv6TcWD9E6APAeByfQEUPFMAWBB+/YparP5RFuT8AxSK/HAzqPpxsikBANy3AMh18QIzXhj9sxg/Abv9MQAIUgUAoZynA2BFIQJ/kkcAq4BS/Mh18QIzXhj9sxg/A5MbqPoClYT2AgpfAeE4ZPqJzmMDcDQjAVMBIv6TcWD9E6APAwCYoP7yq+sCWkO7AIHIdvhADD8Gkse0/eE4ZPqJzmMDcDQjAETClPzIu5MBwsmA+IHIdvhADD8Gkse0/Mh18QIzXhj9sxg/AoEKvP3jxcD9ZUQnAbv9MQAIUgUAoZynAVMBIv6TcWD9E6APAHAzqPpxsikBANy3Abv9MQAIUgUAoZynAYparP5RFuT8AxSK/HAzqPpxsikBANy3Al5HLP9hGT8BCo43AiqLbv4VGPcDplc6/iDsjPjTKIsBXMTBAn7V1P8/hjcBM0pc+YDLpvccC18DgtcfAYDLpvccC18DgtcfAMUKWP5KBssC6PO3ABnNmQI6iT8DtK1rBMUKWP5KBssC6PO3A3BFKQMPr1sD6Z+LABnNmQI6iT8DtK1rBxYaOQBKCE8DQRVHA3BFKQMPr1sD6Z+LA/FroP8jnDsHBgQRAuGJGQKo4AMFg4qS+gAw2QKLTLMBp+D1An7V1P8/hjcBM0pc+iDsjPjTKIsBXMTBA/FroP8jnDsHBgQRAzbxDVz/co4WIN4Ei2dkT99KH3w2LoIk8EsMOWqBCqozsLvRDbDZ8DtKH3w3///8/vGLDYP///z+8YsNguaHFJJ9mMqMPw0MczbxDV9D/k+wSww5atO0k7jExBbkPd5zCq+DRdOf7HfVFfPHBI+J2urdbjPr///+/V87iwSzSQoqbsLHo////vxLDDlrO3cSEV87iwcwSue5OIl3pliDevewu9EMfZ/3EMTEFuZB1k8GIN4EiI4XjWbxiw2D+rEoq7C70Q3p3w7efZjKjnK96q7xiw2D///8/V87iwcg7/OU4PwL+6QPjvpuwsej///+/MTEFubJQDZ+3W4z6////v5uwsej///+/RXzxwf///z+3W4z6////vyjRsAA8BrK9hBvkW7tzgcMtU3h4D8Z2xzRi4UziqK3OrQh+otdk7sCtCH6ih2hOx/BIC9xRbbHHidr66uxK34TwSAvcfyXbnV3sUFcOIJT5idr66nAt5tYH7v093wKMm13sUFcUF0eM7nsPUv///z/NvENX////P52jp3RU/AGrNGLhTKLQmqotU3h4Lsmjue57D1Kc0DJk")
+}, {
+"aabb": AABB(2.649619, -0.9999995, -1.3480481, 1.7888498, 2, 1.70128),
+"attribute_data": PackedByteArray("0UWv1xZdYK+ii///0UURh4su//+ii2CvXHQRh+iir9ctumCv6KIRh7no//9z0RGHRRev14suYK8AAGCvRRcRh1x0r9cWXf//c9Gv1y26//+56GCv//+v1w=="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("BAAMAAAADAANAAAADAAOAA0ADgAPAA0AAAANAAEADQADAAEAAAABABAAAAAQABEAEAABAAUAAQAGAAUAEAAFAAcAAgAQAAcABwAFAAgABQAJAAgABwAIABIAEwAHABIAEgAIABQACAALABQAEgAUABUACgASABUA"),
+"lods": [1.3818928, PackedByteArray("AAABAAIAAAADAAEABAADAAAAAgABAAUAAQAGAAUAAgAFAAcABwAFAAgABQAJAAgABwAIAAoACgAIAAsA")],
+"material": SubResource("StandardMaterial3D_esfkd"),
+"name": "Material.003",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("jOfBRhrPeqr//z25/38mwv9/AAD/f/b2/3////9/dMj/fwAA/3/+wIynPbkAAIrz/3////9/XeVyWMFGAACK83IYPbnkMLPa/3////9/9vb/fwAA/390yP9/////f1TVcljBRv//MpeMpz25///AlnIYPbkaz4up/3////9//sCM58FG5DCz2v9/AAD/f1TVAADBRv9/JsL/fwAA/39d5XIYPbkaz/qscljBRv//cZsZXa00DKmGFJp2skSx32U/yh6acHubwgP9zPwZg2Q8/FmLXt5kiUy7TSCZwKqqqqrFOKGlDNH4Rey2+M404WSPpXSgIVRVVFXyVnjrATMC5saYlMiWKS3T")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_lnsko")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_npbic"]
+albedo_color = Color(0.074696414, 0.85532933, 7.70092e-07, 1)
+metallic = 0.9
+clearcoat_enabled = true
+
 [node name="Shader" type="Node3D" unique_id=80252885]
 
 [node name="SetGlobalVariables" type="Node3D" parent="." unique_id=1655427503]
@@ -629,6 +874,7 @@ scale = Vector2(28.839998, 16.32)
 color = Color(0, 0, 0, 0)
 
 [node name="SheepIntro" type="Node2D" parent="." unique_id=89811382]
+visible = false
 
 [node name="SheepIntroAnim" type="AnimatedSprite2D" parent="SheepIntro" unique_id=1299469526 node_paths=PackedStringArray("instructions", "black_screen")]
 position = Vector2(576, 324)
@@ -639,6 +885,7 @@ frame_progress = 0.44315094
 script = ExtResource("26_4kbfs")
 instructions = NodePath("../Instructions")
 black_screen = NodePath("../../BlackScreen")
+skip_intro = true
 
 [node name="Instructions" type="RichTextLabel" parent="SheepIntro" unique_id=1140436590]
 offset_top = 494.0
@@ -650,6 +897,7 @@ bbcode_enabled = true
 text = "[tornado][center]Press ENTER to start[/center][/tornado]"
 
 [node name="Sun" type="Node3D" parent="." unique_id=572627947]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.531, 20.392, -56.256)
 
 [node name="MovableSun" parent="Sun" unique_id=1416491935 instance=ExtResource("4_k0juu")]
@@ -671,7 +919,7 @@ unique_name_in_owner = true
 [node name="Opening" type="Node3D" parent="CutsceneCameras" unique_id=32334953]
 
 [node name="Sun1" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=482408026]
-transform = Transform3D(0.99906117, 0.0056887693, 0.042947028, 0, 0.99134094, -0.13131315, -0.04332216, 0.13118987, 0.9904102, -1.3747807, 31.404633, -28.635681)
+transform = Transform3D(0.9961985, 0.03292105, -0.08065289, 0, 0.9258416, 0.37791178, 0.08711306, -0.37647513, 0.922322, -1.8041186, 4.5601425, 12.703815)
 fov = 133.4
 script = ExtResource("27_f17e3")
 
@@ -681,7 +929,7 @@ script = ExtResource("27_f17e3")
 weight = 0.1
 
 [node name="Sun2_1" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=593617560]
-transform = Transform3D(-0.8666283, 0.36015207, -0.34532002, 0, 0.6920875, 0.7218137, 0.49895433, 0.62554413, -0.5997826, -22.148682, 64.45126, -64.53015)
+transform = Transform3D(-0.27555633, 0.71386266, -0.6437926, 0, 0.66972095, 0.7426129, 0.96128494, 0.20463169, -0.18454583, -168.74768, 202.51668, 46.990993)
 script = ExtResource("27_f17e3")
 weight = 0.01
 
@@ -700,7 +948,7 @@ script = ExtResource("27_f17e3")
 weight = 0.1
 
 [node name="DONT6" type="Camera3D" parent="CutsceneCameras/Opening" unique_id=1799845002]
-transform = Transform3D(-0.8457154, -0.07699262, 0.5280507, 0, 0.98953694, 0.14427978, -0.5336342, 0.12201963, -0.8368666, -9.264444, 16.12154, 6.0469894)
+transform = Transform3D(-0.9995361, -0.00888118, 0.029131886, 0, 0.95653707, 0.29161093, -0.030455576, 0.29147565, -0.9560933, -43.690907, 146.9222, 85.31242)
 script = ExtResource("27_f17e3")
 weight = 0.1
 
@@ -725,25 +973,91 @@ metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
 [node name="FlowerHead" type="Node3D" parent="CutsceneCameras" unique_id=1571529690]
 
 [node name="FlowerHeadPOV" type="Camera3D" parent="CutsceneCameras/FlowerHead" unique_id=1969269534]
-transform = Transform3D(0.7718138, -0.13170539, 0.62205887, 0, 0.97831273, 0.20713325, -0.6358487, -0.15986829, 0.7550753, 53.08922, 29.777916, 128.1549)
+transform = Transform3D(0.44196755, 0.28024003, -0.8521328, 0, 0.9499479, 0.31240842, 0.89703107, -0.13807437, 0.41984615, 2.5297012, 30.10643, 144.75777)
 script = ExtResource("27_f17e3")
 metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
 
 [node name="FlowerHeadPOV2" type="Camera3D" parent="CutsceneCameras/FlowerHead" unique_id=231655477]
-transform = Transform3D(-0.741761, 0.23984498, -0.6263106, 0, 0.933866, 0.357623, 0.6706643, 0.2652708, -0.69270545, -13.290639, 17.248156, 117.82136)
+transform = Transform3D(-0.74261254, -0.27191362, 0.6120373, 0, 0.9138686, 0.40601012, -0.6697213, 0.30150822, -0.67865026, 48.88377, 31.81204, 100.053734)
+fov = 100.4
 script = ExtResource("27_f17e3")
 weight = 0.1
 metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
 
 [node name="FlowerHeadFriendship" type="Camera3D" parent="CutsceneCameras/FlowerHead" unique_id=1261418002]
-transform = Transform3D(-0.904425, -0.14209288, 0.40227488, 0, 0.9429068, 0.33305675, -0.4266327, 0.3012248, -0.8527885, 44.666466, 28.649582, 118.83905)
+transform = Transform3D(-0.5872385, -0.20203792, 0.78379315, 0, 0.9683464, 0.24961013, -0.809414, 0.14658065, -0.5686503, 90.77755, 104.08943, 88.84689)
+fov = 50.2
 script = ExtResource("27_f17e3")
+weight = 0.5
+metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
+
+[node name="FlowerHeadFriendship2" type="Camera3D" parent="CutsceneCameras/FlowerHead" unique_id=1104292508]
+transform = Transform3D(0.1434817, 0.28859374, -0.9466397, 0, 0.956537, 0.29161105, 0.989653, -0.041840848, 0.13724555, -188.57349, 70.50939, 160.03302)
+fov = 50.2
+script = ExtResource("27_f17e3")
+weight = 0.5
+metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
+
+[node name="FlowerHeadTakeThese" type="Camera3D" parent="CutsceneCameras/FlowerHead" unique_id=1101606779]
+transform = Transform3D(0.104511306, 0.5446291, -0.83213973, 0, 0.83672196, 0.54762805, 0.9945237, -0.057233322, 0.0874469, 7.1561584, 44.401722, 125.371895)
+fov = 50.2
+script = ExtResource("27_f17e3")
+weight = 0.5
 metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
 
 [node name="THEPLACE" type="Camera3D" parent="CutsceneCameras/FlowerHead" unique_id=1681552026]
 transform = Transform3D(-0.76726454, -0.035847954, 0.6403281, 0, 0.9984366, 0.055896204, -0.6413308, 0.042887174, -0.766065, -136.49915, 13.054559, 261.59167)
 script = ExtResource("27_f17e3")
 weight = 0.2
+metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
+
+[node name="HappyFlower" type="Node3D" parent="CutsceneCameras" unique_id=2024347881]
+
+[node name="HappyFlower" type="Camera3D" parent="CutsceneCameras/HappyFlower" unique_id=181555860]
+transform = Transform3D(-0.86981905, 0.09874699, 0.4833879, 0, 0.9797658, -0.2001476, -0.49337086, -0.17409219, -0.8522189, 81.89902, 88.745674, 79.73361)
+fov = 41.5
+script = ExtResource("27_f17e3")
+metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
+
+[node name="SadFlower" type="Node3D" parent="CutsceneCameras" unique_id=142193892]
+
+[node name="SadFlower" type="Camera3D" parent="CutsceneCameras/SadFlower" unique_id=1443971590]
+transform = Transform3D(-0.2907896, 0.067503795, 0.9544028, 0, 0.99750805, -0.07055258, -0.95678705, -0.020515958, -0.29006496, -111.440735, 57.80931, 136.74942)
+fov = 41.5
+script = ExtResource("27_f17e3")
+metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
+
+[node name="SadFlower2" type="Camera3D" parent="CutsceneCameras/SadFlower" unique_id=137317373]
+transform = Transform3D(0.3368349, 0.37852377, -0.86212647, 0, 0.9156326, 0.4020161, 0.9415637, -0.13541305, 0.30841702, -203.35999, 82.65242, 189.01157)
+fov = 30.0
+script = ExtResource("27_f17e3")
+weight = 0.1
+metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
+
+[node name="Believe3" type="Camera3D" parent="CutsceneCameras/SadFlower" unique_id=1007717342]
+transform = Transform3D(0.095726244, -0.7274527, 0.67944765, 0, 0.68258226, 0.7308088, -0.9954077, -0.069957584, 0.06534103, -4.1736755, 173.87613, 158.17981)
+fov = 142.6
+script = ExtResource("27_f17e3")
+weight = 0.01
+metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
+
+[node name="EVILFLOWER" type="Node3D" parent="CutsceneCameras" unique_id=132190398]
+
+[node name="obvious" type="Camera3D" parent="CutsceneCameras/EVILFLOWER" unique_id=784825022]
+transform = Transform3D(-0.25582483, 0.4753682, -0.84177125, 0, 0.8707469, 0.4917315, 0.96672314, 0.12579712, -0.2227587, -149.06581, 33.51508, 223.58432)
+script = ExtResource("27_f17e3")
+metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
+
+[node name="FlowerHead2" type="Node3D" parent="CutsceneCameras" unique_id=177033182]
+
+[node name="FlowerHead2" type="Camera3D" parent="CutsceneCameras/FlowerHead2" unique_id=265207610]
+transform = Transform3D(-0.13488029, 0.17206192, -0.9758084, 0, 0.98480767, 0.17364873, 0.9908619, 0.023421792, -0.13283114, 34.073757, 27.385666, 121.30383)
+script = ExtResource("27_f17e3")
+metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
+
+[node name="FlowerHead3" type="Camera3D" parent="CutsceneCameras/FlowerHead2" unique_id=825467610]
+transform = Transform3D(-0.013107517, 0.16072929, -0.98691154, 0, 0.9869963, 0.1607431, 0.9999141, 0.0021069427, -0.012937071, 40.766968, 28.261059, 121.15603)
+script = ExtResource("27_f17e3")
 metadata/_custom_type_script = "uid://cwtp35nvh4t0q"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=596975614]
@@ -762,7 +1076,7 @@ script = ExtResource("1_rwgxs")
 current_checkpoint = NodePath("../Checkpoints/Checkpoint")
 
 [node name="Model" type="Node3D" parent="Player" unique_id=710967787]
-transform = Transform3D(-0.99985844, 0, 0.01682408, 0, 1, 0, -0.01682408, 0, -0.99985844, 0, -4.0676565, 0)
+transform = Transform3D(-0.99999994, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -0.99999994, 0, -4.0676565, 0)
 
 [node name="Dragonfly" type="Node3D" parent="Player/Model" unique_id=2059563347]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, -0.5337892, 0)
@@ -1043,6 +1357,7 @@ unique_name_in_owner = true
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.7239339, 3.743249, -7.132221)
 top_level = true
 current = true
+fov = 119.5
 script = ExtResource("3_4wyf3")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1886142563]
@@ -1054,6 +1369,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.713028, 0)
 emitting = false
 amount = 50
 mesh = SubResource("PlaneMesh_iexy4")
+
+[node name="Scissors" type="AnimatedSprite3D" parent="Player" unique_id=1532115326]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.642435, 0)
+top_level = true
+visible = false
+pixel_size = 0.0025
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_n78cu")
+frame_progress = 0.1447191
+script = ExtResource("41_ygn2i")
+
+[node name="HoverPos" type="Node3D" parent="Player/Scissors" unique_id=585334163]
+top_level = true
+
+[node name="AttackPos" type="Node3D" parent="Player/Scissors" unique_id=1430838753]
+top_level = true
+
+[node name="ScissorKill" type="Area3D" parent="Player/Scissors" unique_id=431596511]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player/Scissors/ScissorKill" unique_id=1729146700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.23779297, 0.19799805, 0)
+shape = SubResource("BoxShape3D_kvmu4")
+debug_color = Color(0, 0.6, 0.69803923, 1)
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="." unique_id=1091869119]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.36046, 16.921165, 109.404755)
@@ -1104,9 +1442,9 @@ size = Vector3(106, 23, 17)
 material = ExtResource("39_e6ckp")
 
 [node name="CSGBox3D25" type="CSGBox3D" parent="." unique_id=284219401]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.5, 5.686222, 144)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 5.686222, 144)
 use_collision = true
-size = Vector3(61, 12, 60)
+size = Vector3(111, 11, 60)
 material = ExtResource("39_e6ckp")
 
 [node name="CSGBox3D26" type="CSGBox3D" parent="." unique_id=1727924089]
@@ -1115,10 +1453,28 @@ use_collision = true
 size = Vector3(13, 6, 8)
 material = ExtResource("39_e6ckp")
 
-[node name="CSGBox3D27" type="CSGBox3D" parent="." unique_id=1918399084]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.5, 4.186222, 142)
+[node name="CSGBox3D30" type="CSGBox3D" parent="." unique_id=492643416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.5, 27.686222, 120)
 use_collision = true
-size = Vector3(17, 5, 26)
+size = Vector3(13, 2, 8)
+material = ExtResource("39_e6ckp")
+
+[node name="CSGBox3D31" type="CSGBox3D" parent="." unique_id=1202447675]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, -38, 34.686222, 109)
+use_collision = true
+size = Vector3(18, 2, 8)
+material = ExtResource("39_e6ckp")
+
+[node name="CSGBox3D32" type="CSGBox3D" parent="." unique_id=186742860]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, -109.669876, 49.686222, 98.5)
+use_collision = true
+size = Vector3(8, 2, 8)
+material = ExtResource("39_e6ckp")
+
+[node name="CSGBox3D27" type="CSGBox3D" parent="." unique_id=1918399084]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5, 4.186222, 155.5)
+use_collision = true
+size = Vector3(65, 5, 53)
 material = ExtResource("39_e6ckp")
 
 [node name="CSGBox3D24" type="CSGBox3D" parent="." unique_id=955227409]
@@ -1217,7 +1573,6 @@ material = ExtResource("39_e6ckp")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.322878)
 script = ExtResource("7_4mrxx")
 line = NodePath("../DialogueLines/StatementSunChill")
-interact_range = 10.0
 metadata/_custom_type_script = "uid://bhe338gcwph67"
 
 [node name="DialogueBoxes" type="Node2D" parent="." unique_id=330290033]
@@ -1358,6 +1713,7 @@ text = "[wave amp=20.0 freq=5.0 connected=0]press W, A, S, D to move or arrow ke
 talk_sound = ExtResource("8_4mrxx")
 cutscene_camera = NodePath("../../../CutsceneCameras/Opening/Sun1")
 string_signal = "suntalk"
+end_signal = "play_main_music"
 metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
 
 [node name="StatementSunChill" type="Node" parent="DialogueLines" unique_id=302666504]
@@ -1421,24 +1777,6 @@ cutscene_camera = NodePath("../../../../../../../../../CutsceneCameras/FlowerHea
 string_signal = "giveflowerhead"
 metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
 
-[node name="FlowerheadStartQuest" type="Node" parent="DialogueLines" unique_id=846663067]
-script = ExtResource("6_i7141")
-text = "i wish"
-talk_sound = ExtResource("45_pf35h")
-metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
-
-[node name="StatementFlowerHeadQuestStart2" type="Node" parent="DialogueLines/FlowerheadStartQuest" unique_id=838498841]
-script = ExtResource("6_i7141")
-text = "i wish i had a stem"
-talk_sound = ExtResource("45_pf35h")
-metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
-
-[node name="StatementFlowerHeadQuestStart3" type="Node" parent="DialogueLines/FlowerheadStartQuest/StatementFlowerHeadQuestStart2" unique_id=287650238]
-script = ExtResource("6_i7141")
-text = "can you kill my friends"
-talk_sound = ExtResource("45_pf35h")
-metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
-
 [node name="MusicPlayer" type="Node3D" parent="." unique_id=1795944622]
 unique_name_in_owner = true
 script = ExtResource("42_rga7q")
@@ -1446,6 +1784,7 @@ script = ExtResource("42_rga7q")
 [node name="Music" type="AudioStreamPlayer" parent="MusicPlayer" unique_id=1686629649]
 
 [node name="Shader" type="MeshInstance3D" parent="." unique_id=1066191294]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.9519157, 0)
 visible = false
 cast_shadow = 0
@@ -1454,6 +1793,7 @@ mesh = SubResource("QuadMesh_e6ckp")
 script = ExtResource("50_e6ckp")
 
 [node name="FlowerHead" type="AnimatedSprite3D" parent="." unique_id=884142050]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.439095, 27.18458, 121.273224)
 pixel_size = 0.1
 billboard = 2
@@ -1464,16 +1804,17 @@ script = ExtResource("48_d46x8")
 
 [node name="InteractFlowerHeadTalk" type="Node3D" parent="FlowerHead" unique_id=1741021991 node_paths=PackedStringArray("line")]
 script = ExtResource("7_4mrxx")
-line = NodePath("../../DialogueLines/FlowerheadStartQuest")
-interact_range = 10.0
+line = NodePath("../FlowerheadStartQuest")
+interact_range = 18.0
 metadata/_custom_type_script = "uid://bhe338gcwph67"
 
 [node name="InteractLabel" type="Label3D" parent="FlowerHead/InteractFlowerHeadTalk" unique_id=103637066]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.999998, 0)
 pixel_size = 0.05
 billboard = 1
+alpha_cut = 1
 texture_filter = 0
-text = "INTERACT"
+text = "PRESS ENTER TO INTERACT"
 font_size = 12
 
 [node name="OmniLight3D" type="OmniLight3D" parent="FlowerHead" unique_id=1522310295]
@@ -1481,6 +1822,143 @@ light_color = Color(1, 0.81730443, 0.9093104, 1)
 light_indirect_energy = 6.07
 light_volumetric_fog_energy = 6.882
 omni_range = 23.068
+
+[node name="FlowerheadStartQuest" type="Node" parent="FlowerHead" unique_id=846663067 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "i wish"
+talk_sound = ExtResource("48_4kmvx")
+cutscene_camera = NodePath("../../CutsceneCameras/FlowerHead/FlowerHeadPOV")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart2" type="Node" parent="FlowerHead/FlowerheadStartQuest" unique_id=838498841 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "i wish i had a stem"
+talk_sound = ExtResource("49_myjip")
+cutscene_camera = NodePath("../../../CutsceneCameras/FlowerHead/FlowerHeadPOV2")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart3" type="Node" parent="FlowerHead/FlowerheadStartQuest/StatementFlowerHeadQuestStart2" unique_id=287650238 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "can you kill my friends"
+talk_sound = ExtResource("48_4kmvx")
+cutscene_camera = NodePath("../../../../CutsceneCameras/FlowerHead/FlowerHeadFriendship")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart5" type="Node" parent="FlowerHead/FlowerheadStartQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3" unique_id=656368510 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "CAN YOU KILL MY 3 FRIENDS"
+talk_sound = ExtResource("48_4kmvx")
+cutscene_camera = NodePath("../../../../../CutsceneCameras/FlowerHead/FlowerHeadFriendship2")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart4" type="Node" parent="FlowerHead/FlowerheadStartQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart5" unique_id=1918674215 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "here take these scissors. you can hold e to use them."
+talk_sound = ExtResource("50_5nedk")
+cutscene_camera = NodePath("../../../../../../CutsceneCameras/FlowerHead/FlowerHeadTakeThese")
+string_signal = "visible_give_scissors"
+end_signal = "show_scissors"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="FlowerheadCompleteQuest" type="Node" parent="FlowerHead" unique_id=1277297829 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "did you"
+talk_sound = ExtResource("48_4kmvx")
+cutscene_camera = NodePath("../../CutsceneCameras/FlowerHead/FlowerHeadPOV")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart2" type="Node" parent="FlowerHead/FlowerheadCompleteQuest" unique_id=1896954507 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "did you get their stems?"
+talk_sound = ExtResource("49_myjip")
+cutscene_camera = NodePath("../../../CutsceneCameras/FlowerHead/FlowerHeadPOV2")
+end_signal = "give_flowerhead"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart3" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2" unique_id=1322778247]
+script = ExtResource("6_i7141")
+text = "yeah, er here ya go."
+talk_sound = ExtResource("37_817gm")
+end_signal = "resume_happy_music"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart4" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3" unique_id=1801548322]
+script = ExtResource("6_i7141")
+text = "OMG THANKYOUTHATNYKOUTHANKYOU!!!!"
+talk_sound = ExtResource("48_4kmvx")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart5" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4" unique_id=1679411129]
+script = ExtResource("6_i7141")
+text = "wait"
+talk_sound = ExtResource("48_4kmvx")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart6" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5" unique_id=562585185]
+script = ExtResource("6_i7141")
+text = "now i dont have any friends..."
+talk_sound = ExtResource("48_4kmvx")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart7" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5/StatementFlowerHeadQuestStart6" unique_id=504858102]
+script = ExtResource("6_i7141")
+text = "hey since i killed your friends,"
+talk_sound = ExtResource("37_817gm")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart8" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5/StatementFlowerHeadQuestStart6/StatementFlowerHeadQuestStart7" unique_id=2009803866]
+script = ExtResource("6_i7141")
+text = "you're supposed to give me something"
+talk_sound = ExtResource("37_817gm")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart9" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5/StatementFlowerHeadQuestStart6/StatementFlowerHeadQuestStart7/StatementFlowerHeadQuestStart8" unique_id=1956858332]
+script = ExtResource("6_i7141")
+text = "whatdya mean? i never agreed to anything like that"
+talk_sound = ExtResource("48_4kmvx")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart10" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5/StatementFlowerHeadQuestStart6/StatementFlowerHeadQuestStart7/StatementFlowerHeadQuestStart8/StatementFlowerHeadQuestStart9" unique_id=912434896]
+script = ExtResource("6_i7141")
+text = "what if... what if i became your new fri3nd?"
+talk_sound = ExtResource("37_817gm")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart10" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5/StatementFlowerHeadQuestStart6/StatementFlowerHeadQuestStart7/StatementFlowerHeadQuestStart8/StatementFlowerHeadQuestStart9/StatementFlowerHeadQuestStart10" unique_id=894219335]
+script = ExtResource("6_i7141")
+text = "REALLY? ok, so here's the thng. im flat out broke"
+talk_sound = ExtResource("48_4kmvx")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart10" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5/StatementFlowerHeadQuestStart6/StatementFlowerHeadQuestStart7/StatementFlowerHeadQuestStart8/StatementFlowerHeadQuestStart9/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10" unique_id=1545836323]
+script = ExtResource("6_i7141")
+text = "bbut i can fly. if ya want, i'll let you ride on top of me"
+talk_sound = ExtResource("48_4kmvx")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart10" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5/StatementFlowerHeadQuestStart6/StatementFlowerHeadQuestStart7/StatementFlowerHeadQuestStart8/StatementFlowerHeadQuestStart9/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10" unique_id=513044989]
+script = ExtResource("6_i7141")
+text = "uhh, tryna think about how that could be useful..."
+talk_sound = ExtResource("37_817gm")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart10" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5/StatementFlowerHeadQuestStart6/StatementFlowerHeadQuestStart7/StatementFlowerHeadQuestStart8/StatementFlowerHeadQuestStart9/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10" unique_id=1431753232]
+script = ExtResource("6_i7141")
+text = "ok yeah that works."
+talk_sound = ExtResource("37_817gm")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart10" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5/StatementFlowerHeadQuestStart6/StatementFlowerHeadQuestStart7/StatementFlowerHeadQuestStart8/StatementFlowerHeadQuestStart9/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10" unique_id=1816827763]
+script = ExtResource("6_i7141")
+text = "OKAY BUDY HOP ON :)))"
+talk_sound = ExtResource("48_4kmvx")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="StatementFlowerHeadQuestStart10" type="Node" parent="FlowerHead/FlowerheadCompleteQuest/StatementFlowerHeadQuestStart2/StatementFlowerHeadQuestStart3/StatementFlowerHeadQuestStart4/StatementFlowerHeadQuestStart5/StatementFlowerHeadQuestStart6/StatementFlowerHeadQuestStart7/StatementFlowerHeadQuestStart8/StatementFlowerHeadQuestStart9/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10/StatementFlowerHeadQuestStart10" unique_id=1260149165]
+script = ExtResource("6_i7141")
+text = "JUMP IIN THE AIR TO USE ME"
+talk_sound = ExtResource("48_4kmvx")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
 
 [node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="." unique_id=118058993]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.4771, 8.18458, -22.847229)
@@ -1517,6 +1995,12 @@ script = ExtResource("48_d46x8")
 [node name="buildonk" parent="." unique_id=198318155 instance=ExtResource("49_3l05q")]
 transform = Transform3D(-2, 0, 1.7484555e-07, 0, 2, 0, -1.7484555e-07, 0, -2, -58.16336, 130.44797, 226.37457)
 script = ExtResource("50_x28ej")
+
+[node name="Area3D" type="Area3D" parent="buildonk" unique_id=1884099453]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="buildonk/Area3D" unique_id=1765891750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.5, 0)
+shape = SubResource("SphereShape3D_q6do4")
 
 [node name="DontArrow" type="AnimatedSprite3D" parent="." unique_id=1148019797]
 transform = Transform3D(-0.86537015, 0, 0.50113314, 0, 1, 0, -0.50113314, 0, -0.86537015, -189.01233, 68.09007, 266.3128)
@@ -1556,24 +2040,39 @@ script = ExtResource("52_e68xj")
 [node name="Start" type="AudioStreamPlayer" parent="SoundEffects" unique_id=191930658]
 stream = ExtResource("53_5hglh")
 
+[node name="Explosion" type="AudioStreamPlayer" parent="SoundEffects" unique_id=2021948143]
+stream = ExtResource("65_5p8eo")
+
 [node name="Catlo" type="Node3D" parent="." unique_id=1361406195]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.127802, 6.3664913, 49.169716)
 script = ExtResource("57_npbic")
 
 [node name="Model" type="Node3D" parent="Catlo" unique_id=1081553181]
-transform = Transform3D(-0.8660254, 0, 0.50000006, 0, 1, 0, -0.50000006, 0, -0.8660254, -16, 0, 28)
+transform = Transform3D(-0.8660254, 0, 0.50000006, 0, 1, 0, -0.50000006, 0, -0.8660254, 0, 0, 0)
 
 [node name="Icosphere_001" type="MeshInstance3D" parent="Catlo/Model" unique_id=677771520]
 transform = Transform3D(0.21163286, 0, 0, 0, 0.21163285, 0, 0, 0, 0.21163286, -0.34902382, 9.689435, 0.29426575)
 mesh = SubResource("ArrayMesh_k2cig")
-surface_material_override/1 = SubResource("StandardMaterial3D_npbic")
+surface_material_override/1 = SubResource("StandardMaterial3D_ufs10")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Catlo/Model/Icosphere_001" unique_id=478752260]
-transform = Transform3D(-0.8660254, 0, -0.50000006, 0, 1, 0, 0.50000006, 0, -0.8660254, 0, 0, 0)
-light_color = Color(1, 0.38646916, 0.6574306, 1)
-light_energy = 7.865
-light_indirect_energy = 8.529
-light_volumetric_fog_energy = 6.412
-omni_range = 6.035
+[node name="DialogueInteractable" type="Node3D" parent="Catlo/Model" unique_id=1823803699 node_paths=PackedStringArray("line")]
+transform = Transform3D(-0.8660254, 0, -0.50000006, 0, 1, 0, 0.50000006, 0, -0.8660254, 0, 9, 0)
+script = ExtResource("7_4mrxx")
+line = NodePath("DialogueStatement")
+metadata/_custom_type_script = "uid://bhe338gcwph67"
+
+[node name="DialogueStatement" type="Node" parent="Catlo/Model/DialogueInteractable" unique_id=148479824]
+script = ExtResource("6_i7141")
+text = " "
+talk_sound = ExtResource("67_8xaka")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="DialogueStatement" type="Node" parent="Catlo/Model/DialogueInteractable/DialogueStatement" unique_id=6342087]
+script = ExtResource("6_i7141")
+text = "find me"
+talk_sound = ExtResource("68_n6seq")
+end_signal = "catlo_1_perish"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
 
 [node name="map1" type="Node3D" parent="." unique_id=1277011468]
 transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 0, 0, -28)
@@ -1604,23 +2103,86 @@ use_collision = true
 size = Vector3(18, 15, 17)
 material = ExtResource("39_e6ckp")
 
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=1307070532]
+[node name="CSGBox3D29" type="CSGBox3D" parent="CSGCombiner3D" unique_id=975621940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 33.186222, 183.5)
+operation = 2
+use_collision = true
+size = Vector3(18, 15, 17)
+material = ExtResource("39_e6ckp")
+
+[node name="FlowerHappy" type="AnimatedSprite3D" parent="." unique_id=1307070532]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76, 98, 117)
 pixel_size = 0.025
 billboard = 2
 alpha_cut = 1
 sprite_frames = SubResource("SpriteFrames_66tox")
-frame_progress = 0.1423897
+frame_progress = 0.14627078
 script = ExtResource("48_d46x8")
 
-[node name="AnimatedSprite3D6" type="AnimatedSprite3D" parent="." unique_id=1851061250]
+[node name="DialogueInteractable" type="Node3D" parent="FlowerHappy" unique_id=1536424138 node_paths=PackedStringArray("line")]
+script = ExtResource("7_4mrxx")
+line = NodePath("../DialogueStatement")
+interact_range = 18.0
+metadata/_custom_type_script = "uid://bhe338gcwph67"
+
+[node name="DialogueStatement" type="Node" parent="FlowerHappy" unique_id=574432538 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "I love, my life"
+talk_sound = ExtResource("68_swu3i")
+cutscene_camera = NodePath("../../CutsceneCameras/HappyFlower/HappyFlower")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="ScissorKillable" type="Node3D" parent="FlowerHappy" unique_id=1810103769]
+script = ExtResource("72_kvmu4")
+
+[node name="Area3D" type="Area3D" parent="FlowerHappy/ScissorKillable" unique_id=1110799440]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FlowerHappy/ScissorKillable/Area3D" unique_id=18014170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("CapsuleShape3D_kvmu4")
+
+[node name="FLOWEREVIL" type="AnimatedSprite3D" parent="." unique_id=1851061250]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67, 9, 266)
 pixel_size = 0.025
 billboard = 2
 alpha_cut = 1
 sprite_frames = SubResource("SpriteFrames_myjip")
-frame_progress = 0.41918737
+frame_progress = 0.42307022
 script = ExtResource("48_d46x8")
+
+[node name="DialogueInteractable" type="Node3D" parent="FLOWEREVIL" unique_id=189889453 node_paths=PackedStringArray("line")]
+script = ExtResource("7_4mrxx")
+line = NodePath("../DialogueStatement")
+interact_range = 18.0
+metadata/_custom_type_script = "uid://bhe338gcwph67"
+
+[node name="DialogueStatement" type="Node" parent="FLOWEREVIL" unique_id=2097103878]
+script = ExtResource("6_i7141")
+text = "I AM THE [wave]EVIL FLOWER[/wave]"
+talk_sound = ExtResource("71_xgy6y")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="DialogueStatement2" type="Node" parent="FLOWEREVIL/DialogueStatement" unique_id=926549864]
+script = ExtResource("6_i7141")
+text = "YOUNG'UN, HOW DID YOU MY [wave]EVIL[/wave] HIDING SPOT?"
+talk_sound = ExtResource("71_xgy6y")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="DialogueStatement3" type="Node" parent="FLOWEREVIL/DialogueStatement/DialogueStatement2" unique_id=870754565 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "ti was so obvious :/"
+talk_sound = ExtResource("37_817gm")
+cutscene_camera = NodePath("../../../../CutsceneCameras/EVILFLOWER/obvious")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="ScissorKillable" type="Node3D" parent="FLOWEREVIL" unique_id=1042318173]
+script = ExtResource("72_kvmu4")
+
+[node name="Area3D" type="Area3D" parent="FLOWEREVIL/ScissorKillable" unique_id=1068883252]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FLOWEREVIL/ScissorKillable/Area3D" unique_id=53361184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("CapsuleShape3D_kvmu4")
 
 [node name="AnimatedSprite3D7" type="AnimatedSprite3D" parent="." unique_id=1120582064]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -164, 66, 167)
@@ -1628,5 +2190,239 @@ pixel_size = 0.025
 billboard = 2
 alpha_cut = 1
 sprite_frames = SubResource("SpriteFrames_q57r8")
-frame_progress = 0.94504625
+frame_progress = 0.9489291
 script = ExtResource("48_d46x8")
+
+[node name="DialogueInteractable" type="Node3D" parent="AnimatedSprite3D7" unique_id=888093268 node_paths=PackedStringArray("line")]
+script = ExtResource("7_4mrxx")
+line = NodePath("../DialogueStatement")
+interact_range = 18.0
+metadata/_custom_type_script = "uid://bhe338gcwph67"
+
+[node name="DialogueStatement" type="Node" parent="AnimatedSprite3D7" unique_id=1666088514 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "im the sad one. at least, that's what they tell me."
+talk_sound = ExtResource("73_grmox")
+cutscene_camera = NodePath("../../CutsceneCameras/SadFlower/SadFlower")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="DialogueStatement2" type="Node" parent="AnimatedSprite3D7/DialogueStatement" unique_id=627753443 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "ever get the feeling that your entire character is just the caricature of a feeling?"
+talk_sound = ExtResource("73_grmox")
+cutscene_camera = NodePath("../../../CutsceneCameras/SadFlower/SadFlower2")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="DialogueStatement3" type="Node" parent="AnimatedSprite3D7/DialogueStatement/DialogueStatement2" unique_id=304754015 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "you8rye SO MUCh more than that. believe in THINESELF."
+talk_sound = ExtResource("37_817gm")
+cutscene_camera = NodePath("../../../../CutsceneCameras/SadFlower/Believe3")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="DialogueStatement4" type="Node" parent="AnimatedSprite3D7/DialogueStatement/DialogueStatement2/DialogueStatement3" unique_id=1211541470 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "you know what, you're right."
+talk_sound = ExtResource("73_grmox")
+cutscene_camera = NodePath("../../../../../CutsceneCameras/SadFlower/SadFlower2")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="DialogueStatement5" type="Node" parent="AnimatedSprite3D7/DialogueStatement/DialogueStatement2/DialogueStatement3/DialogueStatement4" unique_id=515020383 node_paths=PackedStringArray("cutscene_camera")]
+script = ExtResource("6_i7141")
+text = "thank you traveller, and best of luck on your journey."
+talk_sound = ExtResource("73_grmox")
+cutscene_camera = NodePath("../../../../../../CutsceneCameras/SadFlower/SadFlower2")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="ScissorKillable" type="Node3D" parent="AnimatedSprite3D7" unique_id=898761215]
+script = ExtResource("72_kvmu4")
+
+[node name="Area3D" type="Area3D" parent="AnimatedSprite3D7/ScissorKillable" unique_id=1364352638]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatedSprite3D7/ScissorKillable/Area3D" unique_id=2054441957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("CapsuleShape3D_kvmu4")
+
+[node name="YOUGOTScissors" type="Node2D" parent="." unique_id=34727860]
+visible = false
+script = ExtResource("69_qaasp")
+
+[node name="YOUGOT" type="AnimatedSprite2D" parent="YOUGOTScissors" unique_id=195686379]
+position = Vector2(576, 407)
+sprite_frames = SubResource("SpriteFrames_ygn2i")
+frame_progress = 0.3476421
+script = ExtResource("72_ca4ee")
+
+[node name="EnterToContinue" type="AnimatedSprite2D" parent="YOUGOTScissors" unique_id=1895273418]
+position = Vector2(963.00006, 515)
+scale = Vector2(0.45, 0.45)
+sprite_frames = SubResource("SpriteFrames_oexs8")
+frame_progress = 0.19630404
+script = ExtResource("72_ca4ee")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="YOUGOTScissors" unique_id=1290358435]
+offset_top = 83.0
+offset_right = 1152.0
+offset_bottom = 731.0
+
+[node name="SubViewport" type="SubViewport" parent="YOUGOTScissors/SubViewportContainer" unique_id=20654105]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 0
+
+[node name="Camera3D" type="Camera3D" parent="YOUGOTScissors/SubViewportContainer/SubViewport" unique_id=324781769]
+transform = Transform3D(-0.99798834, 0.001885531, -0.06337016, 0, 0.9995577, 0.02974108, 0.063398205, 0.02968125, -0.99754685, -0.5360794, 0.9888096, -9.80835)
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="YOUGOTScissors/SubViewportContainer/SubViewport" unique_id=1787519826]
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_swu3i")
+script = ExtResource("74_l137e")
+
+[node name="Background" type="ColorRect" parent="YOUGOTScissors" unique_id=1559121506]
+z_index = -1
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="hi it is me the scissors" type="AudioStreamPlayer" parent="YOUGOTScissors" unique_id=1683631777]
+stream = ExtResource("79_l137e")
+
+[node name="DisplayInteract" type="Node2D" parent="." unique_id=1289594414]
+unique_name_in_owner = true
+script = ExtResource("82_c15v2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="DisplayInteract" unique_id=66297353]
+position = Vector2(575, 105)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_xgy6y")
+script = ExtResource("72_ca4ee")
+
+[node name="ScissorsGiveable" type="AnimatedSprite3D" parent="." unique_id=167544277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.70408, 34.386642, 120.911354)
+top_level = true
+visible = false
+pixel_size = 0.0025
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_n78cu")
+frame_progress = 0.38085407
+script = ExtResource("90_gny1c")
+
+[node name="Pos1" type="Node3D" parent="ScissorsGiveable" unique_id=1189624500]
+
+[node name="Pos2" type="Node3D" parent="ScissorsGiveable" unique_id=1981558788]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.961205, 0, 0)
+
+[node name="FlowerPower" type="Node2D" parent="." unique_id=1990045801]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="FlowerPower" unique_id=2086180733]
+offset_left = -467.0
+offset_top = -235.0
+offset_right = 685.0
+offset_bottom = 413.0
+
+[node name="SubViewport" type="SubViewport" parent="FlowerPower/SubViewportContainer" unique_id=59253855]
+own_world_3d = true
+world_3d = SubResource("World3D_mlb8o")
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="FlowerPower/SubViewportContainer/SubViewport" unique_id=1946869219]
+
+[node name="FlowerCount" type="Label3D" parent="FlowerPower/SubViewportContainer/SubViewport" unique_id=1428740946]
+unique_name_in_owner = true
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.33421195, 0, -1)
+pixel_size = 0.0015
+text = "you have 0."
+script = ExtResource("92_ebmc1")
+
+[node name="YOU MAY NOW RETURN" type="Label3D" parent="FlowerPower/SubViewportContainer/SubViewport/FlowerCount" unique_id=715570009]
+unique_name_in_owner = true
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, -0.1, 0)
+visible = false
+pixel_size = 0.0015
+text = "YOU MAY NOW RETURN"
+script = ExtResource("94_ufs10")
+
+[node name="PowerHolder" type="Node3D" parent="FlowerPower/SubViewportContainer/SubViewport" unique_id=1566129847]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, -1.240679)
+
+[node name="FlowerPower" type="AnimatedSprite3D" parent="FlowerPower/SubViewportContainer/SubViewport/PowerHolder" unique_id=393552630]
+pixel_size = 0.02
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_n6seq")
+script = ExtResource("92_mlb8o")
+spin_time = 16.0
+hover_time = 0.8
+hover_height = 0.1
+
+[node name="Catlo2" type="Node3D" parent="." unique_id=849381480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.737915, -5.779339, 48.621666)
+script = ExtResource("97_h5nhj")
+
+[node name="Model" type="Node3D" parent="Catlo2" unique_id=981505452]
+transform = Transform3D(-0.8660254, 0, 0.50000006, 0, 1, 0, -0.50000006, 0, -0.8660254, 0, 0, 0)
+
+[node name="Icosphere_001" type="MeshInstance3D" parent="Catlo2/Model" unique_id=1387944685]
+transform = Transform3D(0.21163288, 0, -1.4901161e-08, 0, 0.21163285, 0, 1.4901161e-08, 0, 0.21163288, -5.7255974, 9.689435, -5.2399445)
+mesh = SubResource("ArrayMesh_h5nhj")
+surface_material_override/1 = SubResource("StandardMaterial3D_q6do4")
+
+[node name="DialogueInteractable" type="Node3D" parent="Catlo2/Model" unique_id=1186264635 node_paths=PackedStringArray("line")]
+transform = Transform3D(-0.8660254, 0, -0.50000006, 0, 1, 0, 0.50000006, 0, -0.8660254, 0, 9, 0)
+script = ExtResource("7_4mrxx")
+line = NodePath("DialogueStatement")
+metadata/_custom_type_script = "uid://bhe338gcwph67"
+
+[node name="DialogueStatement" type="Node" parent="Catlo2/Model/DialogueInteractable" unique_id=552592280]
+script = ExtResource("6_i7141")
+text = " "
+talk_sound = ExtResource("67_8xaka")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="DialogueStatement" type="Node" parent="Catlo2/Model/DialogueInteractable/DialogueStatement" unique_id=1996939689]
+script = ExtResource("6_i7141")
+text = "find them"
+talk_sound = ExtResource("68_n6seq")
+end_signal = "catlo_2_perish"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="Catlo3" type="Node3D" parent="." unique_id=1660317341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.262085, 30.293987, 183.62167)
+script = ExtResource("98_q6do4")
+
+[node name="Model" type="Node3D" parent="Catlo3" unique_id=1964168277]
+transform = Transform3D(-0.8660254, 0, 0.50000006, 0, 1, 0, -0.50000006, 0, -0.8660254, 0, 0, 0)
+
+[node name="Icosphere_001" type="MeshInstance3D" parent="Catlo3/Model" unique_id=286006742]
+transform = Transform3D(0.21163288, 0, -9.685755e-08, 0, 0.21163285, 0, 9.685755e-08, 0, 0.21163288, 0, 0, 0)
+mesh = SubResource("ArrayMesh_q6do4")
+surface_material_override/1 = SubResource("StandardMaterial3D_npbic")
+
+[node name="DialogueInteractable" type="Node3D" parent="Catlo3/Model" unique_id=695078879 node_paths=PackedStringArray("line")]
+transform = Transform3D(-0.8660254, 0, -0.50000006, 0, 1, 0, 0.50000006, 0, -0.8660254, 0, 0, 0)
+script = ExtResource("7_4mrxx")
+line = NodePath("DialogueStatement")
+metadata/_custom_type_script = "uid://bhe338gcwph67"
+
+[node name="DialogueStatement" type="Node" parent="Catlo3/Model/DialogueInteractable" unique_id=1454989096]
+script = ExtResource("6_i7141")
+text = " "
+talk_sound = ExtResource("67_8xaka")
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="DialogueStatement" type="Node" parent="Catlo3/Model/DialogueInteractable/DialogueStatement" unique_id=780113975]
+script = ExtResource("6_i7141")
+text = "save her"
+talk_sound = ExtResource("68_n6seq")
+end_signal = "catlo_3_perish"
+metadata/_custom_type_script = "uid://c8bi7g2viyk8e"
+
+[node name="DEBUGTP" type="Node3D" parent="." unique_id=808137022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63, 482, 205)
+script = ExtResource("99_pb8sg")
+
+[connection signal="body_entered" from="buildonk/Area3D" to="buildonk" method="_on_area_3d_body_entered"]

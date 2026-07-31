@@ -4,6 +4,8 @@ render_mode unshaded, fog_disabled;
 uniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_nearest;
 uniform float texel_size : hint_range(0.0, 1.0, 0.1);
 
+uniform bool weirder;
+
 void vertex() {
 	// Called for every vertex the material is visible on.
 	POSITION = vec4(VERTEX.xy, 1.0, 1.0);
@@ -16,6 +18,10 @@ void fragment() {
 	float y_pixellate = 512.0;
 	
 	vec2 offset_uv = SCREEN_UV + vec2(sin(TIME/1.5)*.01, cos(TIME/1.5)*.01);
+	
+	if (weirder == true) {
+		offset_uv = SCREEN_UV + vec2(sin(TIME)*.02, cos(TIME/1.2)*.025);
+	}
 	
 	vec2 center = vec2(.5, .5);
 	
@@ -32,6 +38,12 @@ void fragment() {
 	vec2 texel_uv = vec2(texel_uv_x, texel_uv_y);
 	
 	vec4 color = texture(screen_texture, texel_uv);
+	
+	if (weirder == true) {
+		color.g = 0.0;
+		color.b = 0.0;
+		color.r *= .5;
+	}
 	
 	ALBEDO = color.rgb;
 }

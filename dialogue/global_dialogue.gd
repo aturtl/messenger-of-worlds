@@ -53,6 +53,9 @@ func play_line(dialogue: DialogueLine):
 	
 	await statement_continue
 	
+	if dialogue.end_signal:
+		string_signal.emit(dialogue.end_signal)
+	
 	dialogue.box.visible = false
 	
 	if dialogue is DialogueStatement:
@@ -64,6 +67,9 @@ func play_line(dialogue: DialogueLine):
 
 
 func start(dialogue: DialogueLine):
+	if GlobalVariables.player.dialogue_lock == true:
+		return
+	
 	GlobalVariables.player.player_lock = true
 	started.emit()
 	running = true

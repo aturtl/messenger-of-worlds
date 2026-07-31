@@ -2,8 +2,9 @@ class_name Interactable extends Node3D
 
 
 @onready var player = %Player
-@export var interact_range = 100.0
+@export var interact_range = 10.0
 @onready var label: Label3D = $InteractLabel
+@onready var display_interact = %DisplayInteract
 
 
 signal entered_range
@@ -44,16 +45,23 @@ func _ready():
 	exited_range.connect(_exited_range)
 
 
+func _exit_tree():
+	display_interact.remove(self)
+
+
 func _physics_process(delta):
 	if global_position.distance_to(player.global_position) <= interact_range:
-		if label and !player.player_lock:
-			label.visible = true
+		if !player.player_lock:
+			if label:
+				label.visible = true
+			display_interact.add(self)
 		if !in_range:
 			entered_range.emit()
 		in_range = true
 	else:
 		if label:
 			label.visible = false
+		display_interact.remove(self)
 		if in_range:
 			exited_range.emit()
 		in_range = false

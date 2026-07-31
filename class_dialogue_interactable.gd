@@ -6,6 +6,7 @@ class_name DialogueInteractable extends Interactable
 
 func interact_message():
 	return "Press Enter to Interact"
+	
 
 
 func _on_interact():

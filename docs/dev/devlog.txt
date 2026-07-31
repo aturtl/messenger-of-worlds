@@ -47,3 +47,28 @@ I will also be focusing on quality over quantity this time (unlike GWJ#94). My g
 	- Floor tiling
 	- Added catlo. One of 7 catlo collectibles.
 	- Messed with the lighting. MADE THE SKY PURPLE. And changed colors and stuff.
+
+7/29:
+	- Readjusted lighting again
+	- Created the concept and modeled the geometry for the map
+	- Added flower sprites of different emotions
+	- Didn't have much time to work on stuff today (that's about it)
+
+7/30:
+	- Added flower talk sound effects:
+		- FlowerHead: Me
+		- Happy: GOSH DANG HOTDOG
+		- Sad: Mr. Frog
+		- Angry: PERRY THE PLATYPUS
+	- Gave the flowers their own unique dialogues
+	- Made the scissors actually collectible with a "YOU GOT" screen after talking to Flowerhead
+		- Voice acting by me because I wanted to
+	- Made scissors follow the player within a range
+	- Scissors are usable and can now be used to kill the flowers (explosion SFX from Universfield on pixabay.com)
+	- Gave the player the ability to collect souls (with dialogued sampled from windows and M64)
+	- Added a flower death counter
+	- Unique flowerhead dialogue after killing all 3 flowers (gives ability)
+	- Redid the sun cameras
+	- Fixed catlos vanishing for no apparent reason
+	- Added some happy music with a little bit of "something's off" and then made an altered slower version of it
+	- Created shader parameter to up the weirdness and make everything red

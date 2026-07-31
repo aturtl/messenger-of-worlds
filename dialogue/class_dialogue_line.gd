@@ -8,6 +8,7 @@ class_name DialogueLine extends Node
 @export var cutscene_camera: CutsceneCamera
 
 @export var string_signal = ""
+@export var end_signal = ""
 
 func _ready():
 	if box == null:

@@ -11,6 +11,7 @@ var await_interact = true
 
 
 func _ready():
+	get_parent().visible = true
 	if skip_intro:
 		await get_tree().create_timer(.5).timeout
 		%MusicPlayer.stop_music()

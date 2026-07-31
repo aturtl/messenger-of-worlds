@@ -2,6 +2,7 @@ extends CharacterBody3D
 
 @onready var cam: Camera3D = $PlayerCamera
 @onready var model: Node3D = $Model
+@onready var scissors = $Scissors
 
 @onready var flowerhead_particle = $FlowerheadParticle
 
@@ -11,7 +12,10 @@ extends CharacterBody3D
 
 @export var current_checkpoint: Checkpoint
 
+var dead_flowers = 0
+
 var player_lock = true
+var dialogue_lock = false
 
 var cam_y_rot: float = 0.0
 var input_direction: Vector2
@@ -44,6 +48,15 @@ var flowerhead_activated: bool = false
 var max_flowerhead_activation = 1.0
 var current_flowerhead_activation = 0.0
 
+
+var has_scissors = false
+var using_scissors = false
+
+var souls_freed = 0
+
+var fov_base = 100.0
+var fov_increase = -10.0
+var desired_fov = 0.0
 
 func summon_flowerhead():
 	print("summoned")
@@ -87,11 +100,32 @@ func respawn_at_last_checkpoint():
 
 
 func _dialogue_string_signal(sig):
-	if sig == "giveflowerhead":
+	if sig == "give_flowerhead":
 		has_flowerhead = true
 
 
+func shake_screen(intensity, loops, time_between_shakes):
+	var shake_tween = get_tree().create_tween()
+	
+	var neg = 1
+	
+	var loop_count = 0
+	
+	for loop in loops:
+		neg = -neg
+		loop_count += 1
+		shake_tween.tween_property(cam, "rotation:z", intensity*neg/loop_count,time_between_shakes).set_trans(Tween.TRANS_BOUNCE)
+	
+	await shake_tween.finished
+	
+	var correct_tween = get_tree().create_tween()
+	correct_tween.tween_property(cam, "rotation:z", 0.0, .05)
+
+
 func _physics_process(delta):
+	if has_scissors:
+		scissors.visible = true
+	
 	Dialogue.string_signal.connect(_dialogue_string_signal)
 	
 	if position.y <= death_barrier:
@@ -134,8 +168,19 @@ func _physics_process(delta):
 	if move_velocity.length() > max_speed:
 		move_velocity = move_velocity.normalized() * max_speed
 	
+	desired_fov = fov_base+(move_velocity.length()/max_speed)*fov_increase
+	
+	cam.fov = lerp(cam.fov, desired_fov, .05)
+	
 	if has_flowerhead and !is_on_floor() and Input.is_action_just_pressed("jump"):
 		flowerhead_activated = true
+	
+	if scissors.visible and Input.is_action_pressed("attack"):
+		using_scissors = true
+		scissors.state = "attacking"
+	else:
+		using_scissors = false
+		scissors.state = "hovering"
 	
 	if is_on_floor():
 		flowerhead_particle.mesh.get_material().albedo_color = Color(1,1,1)

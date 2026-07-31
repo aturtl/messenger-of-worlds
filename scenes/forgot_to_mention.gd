@@ -6,6 +6,8 @@ func _forgot(sig):
 		await Dialogue.finished_talking
 		await get_tree().create_timer(2.0).timeout
 		Dialogue.start(%DialogueLines.get_node("StatementSunForgot"))
+	elif sig == "play_main_music":
+		%MusicPlayer.play_music("res://sounds/music/dream.mp3",-12.0)
 
 
 func _ready():
