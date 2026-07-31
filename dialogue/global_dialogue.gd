@@ -13,6 +13,7 @@ var choice: int
 var running = false # (full)
 var talking = false
 
+var lock_player = true
 
 @onready var sound: AudioStreamPlayer
 
@@ -39,9 +40,9 @@ func play_line(dialogue: DialogueLine):
 	dialogue.box.visible = true
 	
 	var cc = dialogue.cutscene_camera
-	if cc:
-		GlobalVariables.action_camera.current = true
+	if cc and GlobalVariables.action_camera.enable_on_dialogue_start:
 		cc.interpolate_to()
+		GlobalVariables.action_camera.current = true
 	
 	if dialogue.string_signal != "":
 		string_signal.emit(dialogue.string_signal)
@@ -70,15 +71,18 @@ func start(dialogue: DialogueLine):
 	if GlobalVariables.player.dialogue_lock == true:
 		return
 	
-	GlobalVariables.player.player_lock = true
+	if lock_player:
+		GlobalVariables.player.player_lock = true
 	started.emit()
 	running = true
 	play_line(dialogue)
 
 
 func finish():
-	GlobalVariables.player_camera.current = true
-	GlobalVariables.player.player_lock = false
+	if GlobalVariables.action_camera.disable_on_dialogue_end:
+		GlobalVariables.player_camera.current = true
+	if lock_player:
+		GlobalVariables.player.player_lock = false
 	running = false
 	ended.emit()
 	print("done")

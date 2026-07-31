@@ -72,3 +72,4 @@ I will also be focusing on quality over quantity this time (unlike GWJ#94). My g
 	- Fixed catlos vanishing for no apparent reason
 	- Added some happy music with a little bit of "something's off" and then made an altered slower version of it
 	- Created shader parameter to up the weirdness and make everything red
+	- Reorganized game folders since the disorganization was driving me insane

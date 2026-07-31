@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b81v41ha7npud"]
+
+[ext_resource type="PackedScene" uid="uid://skbtvcvj1xxh" path="res://map/buildonk/buildonk.fbx" id="1_g6d2s"]
+
+[node name="buildonk" unique_id=198318155 instance=ExtResource("1_g6d2s")]
+
+[node name="Cube" parent="." index="0" unique_id=2003842694]
+transform = Transform3D(149.46515, 0, 0, 0, -6.5333293e-06, 149.46515, 0, -149.46515, -6.5333293e-06, 0, 1.4941552, 0)
