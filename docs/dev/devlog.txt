@@ -73,3 +73,12 @@ I will also be focusing on quality over quantity this time (unlike GWJ#94). My g
 	- Added some happy music with a little bit of "something's off" and then made an altered slower version of it
 	- Created shader parameter to up the weirdness and make everything red
 	- Reorganized game folders since the disorganization was driving me insane
+	- Added the first ending: the BAD ending. Honestly, pretty happy with it. Not sure if I'm going to be able to include the true ending before the jam ends though...
+	- Several more sound effects from sfxr- really good website! 
+	- Exported game to web. Safe guard in case something happens tmr and I'm not able to submit!!
+	
+7/31: FINISHING TOUCHES!!!
+	- Added something special for the 100 jumps. I was just gonna leave it at nothing but I realize now that's genuinely just evil (actually i am slightly evil so i made iit 105 jumps)
+	- SHEEPLE. THE SHEEPLE ARE REAL. (sponge laugh blip)
+	- A VERY VERY MODIFIED SNEAKERS O'TOOLE BLIP for ending dialogue
+	

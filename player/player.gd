@@ -12,6 +12,10 @@ extends CharacterBody3D
 
 @export var current_checkpoint: Checkpoint
 
+@onready var true_body = $Model/Dragonfly/Skeleton3D/Icosphere_002
+
+@onready var dragonfly_blue: Mesh = preload("res://materials/dragonfly_blue.tres")
+
 var dead_flowers = 0
 
 var player_lock = true
@@ -59,6 +63,13 @@ var fov_base = 100.0
 var fov_increase = -10.0
 var desired_fov = 0.0
 
+var footstep_cd = .2
+var footstep_current = 0.0
+
+var jumps = 0
+
+var scissors_initial = false
+
 func summon_flowerhead():
 	print("summoned")
 
@@ -80,7 +91,6 @@ func _ready():
 	
 	anim_player.set_blend_time("dragonfly/Idle", "dragonfly/Hover", .2)
 	anim_player.set_blend_time("dragonfly/Run", "dragonfly/Hover", .2)
-	
 
 
 func manage_animations():
@@ -123,6 +133,21 @@ func shake_screen(intensity, loops, time_between_shakes):
 	
 	var correct_tween = get_tree().create_tween()
 	correct_tween.tween_property(cam, "rotation:z", 0.0, .05)
+
+
+func footstep(num: int):
+	if !is_on_floor():
+		return
+	print("FOOTSTEP")
+	if num == 1:
+		%SoundEffects.play_sound_effect("Footstep")
+	else:
+		%SoundEffects.play_sound_effect("Footstep2")
+
+
+func jumped_100_times():
+	true_body.mesh = dragonfly_blue
+	shake_screen(.5,4,.1)
 
 
 func _physics_process(delta):
@@ -170,6 +195,7 @@ func _physics_process(delta):
 		move_velocity = move_velocity.normalized() * max_speed
 	
 	desired_fov = fov_base+(move_velocity.length()/max_speed)*fov_increase
+	footstep_cd = .4-(move_velocity.length()/max_speed)*.2
 	
 	cam.fov = lerp(cam.fov, desired_fov, .05)
 	
@@ -177,22 +203,34 @@ func _physics_process(delta):
 		flowerhead_activated = true
 	
 	if scissors.visible and Input.is_action_pressed("attack"):
+		if scissors_initial:
+			scissors_initial = false
+			%SoundEffects.play_sound_effect("UseScissors")
 		using_scissors = true
 		scissors.state = "attacking"
 	else:
+		scissors_initial = true
 		using_scissors = false
 		scissors.state = "hovering"
+	
+	if jumps == 105:
+		jumped_100_times()
 	
 	if is_on_floor():
 		flowerhead_particle.mesh.get_material().albedo_color = Color(1,1,1)
 		flowerhead_activated = false
 		current_flowerhead_activation = 0.0
 		if jumping:
+			%SoundEffects.play_sound_effect("Jump")
 			successful_jump = true
 			grav_velocity.y = jump_amount
+			jumps += 1
+			print("JUMPS: ", jumps)
 		else:
 			grav_velocity.y = 0.0
 	elif flowerhead_activated and current_flowerhead_activation < max_flowerhead_activation:
+		if current_flowerhead_activation == 0.0:
+			%SoundEffects.play_sound_effect("FlowerheadJump")
 		current_flowerhead_activation += delta
 		var red_amount = current_flowerhead_activation/max_flowerhead_activation
 		flowerhead_particle.mesh.get_material().albedo_color = Color(1,1-red_amount,1)

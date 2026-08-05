@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://bxu667d8uvkup"]
+
+[ext_resource type="PackedScene" uid="uid://cvwyftavka44a" path="res://npcs/sheeple/sheeple.fbx" id="1_n1kmk"]
+[ext_resource type="Script" uid="uid://buap3aure33jy" path="res://npcs/sheeple/sheeple.gd" id="2_yu6jo"]
+[ext_resource type="Texture2D" uid="uid://djv7ekehppwst" path="res://npcs/sheeple/sheeple_body_0000.png" id="3_n5v6y"]
+[ext_resource type="Texture2D" uid="uid://ctk5pc4rg8j5v" path="res://npcs/sheeple/sheeple_body_0001.png" id="4_4dc2w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yu6jo"]
+shading_mode = 0
+albedo_color = Color(0.6307091, 0.36990938, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5v6y"]
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4dc2w"]
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_db7ni"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_n5v6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4dc2w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="sheeple" unique_id=726714566 instance=ExtResource("1_n1kmk")]
+script = ExtResource("2_yu6jo")
+
+[node name="Icosphere" parent="." index="0" unique_id=1975595581]
+surface_material_override/0 = SubResource("StandardMaterial3D_yu6jo")
+surface_material_override/1 = SubResource("StandardMaterial3D_n5v6y")
+
+[node name="Icosphere_001" parent="." index="1" unique_id=688812061]
+surface_material_override/0 = SubResource("StandardMaterial3D_4dc2w")
+
+[node name="wool" type="AnimatedSprite3D" parent="." index="2" unique_id=449571911]
+transform = Transform3D(-6.5567085e-09, 0, 0.25, 0, 0.15, 0, -0.15, 0, -1.0927847e-08, 0, 0, 0)
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.5444707
+
+[node name="wool2" type="AnimatedSprite3D" parent="." index="3" unique_id=722262374]
+transform = Transform3D(-1.6970017e-09, 0.14488888, 0.06470477, 6.3332934e-09, 0.038822863, -0.24148145, -0.15, 0, -1.0927846e-08, 0, 0, 0)
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.3125386
+
+[node name="wool3" type="AnimatedSprite3D" parent="." index="4" unique_id=116275413]
+transform = Transform3D(-1.6969998e-09, -0.14488888, 0.06470476, -6.3332926e-09, 0.038822852, 0.24148144, -0.14999999, -1.3792649e-16, -1.0927844e-08, 0, 0, 0)
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.32866398
+
+[node name="wool4" type="AnimatedSprite3D" parent="." index="5" unique_id=1022999256]
+transform = Transform3D(-4.6362905e-09, -0.106066026, 0.17677668, -4.636294e-09, 0.106066026, 0.17677669, -0.15, -1.286872e-16, -1.0927844e-08, 0, 0, 0)
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.32866398
+
+[node name="wool5" type="AnimatedSprite3D" parent="." index="6" unique_id=1542375564]
+transform = Transform3D(-4.636292e-09, 0.10606602, 0.17677666, 4.636291e-09, 0.10606603, -0.17677672, -0.15, -1.286872e-16, -1.0927844e-08, 0, 0, 0)
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.32866398
+
+[node name="wool6" type="AnimatedSprite3D" parent="." index="7" unique_id=1349324003]
+transform = Transform3D(-6.333292e-09, -0.03882286, 0.24148145, -1.697002e-09, 0.14488891, 0.064704746, -0.15, -1.286872e-16, -1.0927844e-08, 0, 0, 0)
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+
+[node name="wool7" type="AnimatedSprite3D" parent="." index="8" unique_id=757147638]
+transform = Transform3D(-6.333292e-09, 0.038822856, 0.24148144, 1.696999e-09, 0.1448889, -0.064704776, -0.15, -1.2868721e-16, -1.0927844e-08, 0, 0, 0)
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.32866398
+
+[node name="wool9" type="AnimatedSprite3D" parent="." index="9" unique_id=12105867]
+transform = Transform3D(-4.8159593e-16, 0.105227865, -0.17816268, -0.089999996, 6.9305255e-17, 2.6645353e-15, -1.0941421e-16, 0.106897615, 0.17537974, 0, 0.12033501, 0)
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.56555355
+
+[node name="wool10" type="AnimatedSprite3D" parent="." index="10" unique_id=996955396]
+transform = Transform3D(-1.2260144e-16, 0.10974768, 0.17041978, -0.089999996, 6.9305255e-17, 2.6645353e-15, 4.7840887e-16, -0.10225189, 0.18291278, 0, 0.12033501, 0)
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.56555355
+
+[node name="wool11" type="AnimatedSprite3D" parent="." index="11" unique_id=414948618]
+transform = Transform3D(-4.1582285e-16, 0.15, -1.004827e-23, -0.089999996, 6.9305255e-17, 2.6645353e-15, 2.6645354e-16, -7.450581e-09, 0.24999997, 0, 0.12033501, 0)
+flip_v = true
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.56555355
+
+[node name="wool12" type="AnimatedSprite3D" parent="." index="12" unique_id=633375280]
+transform = Transform3D(-4.8159593e-16, 0.105227865, -0.17816268, -0.089999996, 6.9305255e-17, 2.6645353e-15, -1.0941421e-16, 0.106897615, 0.17537974, 0, 0.12033501, 0)
+flip_v = true
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.56555355
+
+[node name="wool13" type="AnimatedSprite3D" parent="." index="13" unique_id=2021746838]
+transform = Transform3D(-1.2260144e-16, 0.10974768, 0.17041978, -0.089999996, 6.9305255e-17, 2.6645353e-15, 4.7840887e-16, -0.10225189, 0.18291278, 0, 0.12033501, 0)
+flip_v = true
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_db7ni")
+frame_progress = 0.56555355

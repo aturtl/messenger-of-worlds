@@ -8,6 +8,8 @@ func _ready():
 	pass
 
 func bad_ending():
+	await get_tree().create_timer(2.0).timeout
+	
 	b_loss_text.modulate.a = 0.0
 	
 	b.visible = true
